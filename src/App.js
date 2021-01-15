@@ -10,18 +10,18 @@ import ProjectList from './views/ProjectList';
 import Swipe from './views/Swipe';
 import TopMenu from "./views/components/TopMenu";
 import LeftMenu from "./views/components/LeftMenu";
-import {Container} from 'react-bootstrap'
-import {Row} from 'react-bootstrap'
-import {Col} from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
+
 
 function App() {
   return (
     <div>
-      <TopMenu/>
+      <TopMenu />
       <Container>
         <Row>
           <Col md={4}>
-              <LeftMenu />
+
+            <LeftMenu />
           </Col>
           <Col md={8}>
             <Router>

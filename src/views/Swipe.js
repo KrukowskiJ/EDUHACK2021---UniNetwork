@@ -77,7 +77,7 @@ const Card = ({ data, LikeHandler }) => {
   return (
     <CardBorder>
       <Container>
-        <ProjectBox data></ProjectBox>
+        <ProjectBox data={data }></ProjectBox>
         <Row>
           <Col>
             <Row>

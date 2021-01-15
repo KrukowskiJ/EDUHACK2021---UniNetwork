@@ -17,7 +17,7 @@ export default () => {
   const LikeHandler = (isGood) => {
 
     const calcStyles = (oldOne) => {
-      if (oldOne.left > 0) {
+      if (oldOne.left !== 0) {
         if (isGood) return { ...oldOne, left: 3000 }
         return { ...oldOne, left: -3000 }
       }

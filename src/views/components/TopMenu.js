@@ -8,6 +8,7 @@ export default () => {
       <Link to='projects'>Projects</Link> {" "}
       <Link to='matches'>matches</Link> {" "}
       <Link to='profile'>profile</Link> {" "}
+      <Link to='swipe'>swipe</Link> {" "}
     </div>
   );
 }

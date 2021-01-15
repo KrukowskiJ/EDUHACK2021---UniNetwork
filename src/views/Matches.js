@@ -2,7 +2,10 @@ import React from 'react';
 import SectionTitle from "./atoms/SectionTitle";
 import Header from "./atoms/Profile_Matches";
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3020fb37bc6af7c88948cbf6ece0909009a11633
 export default () => {
   return (
     <div>
@@ -22,4 +25,7 @@ export default () => {
     </div>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3020fb37bc6af7c88948cbf6ece0909009a11633

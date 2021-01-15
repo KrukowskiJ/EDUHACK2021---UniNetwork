@@ -4,12 +4,15 @@ import { Row, Col } from "react-bootstrap";
 import SkillBox from "./atoms/SkillBox";
 import SkillBoxEmpty from "./atoms/SkillBoxEmpty";
 import SkillsPng from "../img/profile_skills.png";
-
+import SectionTitle from "./atoms/SectionTitle"
 export default () => {
   return (
     <div>
       <br></br>
       <br></br>
+      <div>
+        <SectionTitle title="PROFILE" />
+      </div>
       <GreenLine/>
       <Box>
         <Row>
@@ -67,22 +70,20 @@ const Box = styled.div`
 const SmallTittle = styled.h1`
   font-family: Roboto;
   font-style: normal;
-  font-weight: 200;
-  font-size: 20px;
+  font-weight: 100; 
+  font-size: 15px;
   line-height: 29px;
 
-  color: #4fb084;
+  color: #7A7A7A;
 `;
 
 const BigTittle = styled.h1`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 25px;
   line-height: 29px;
   color: #4fb084;
 `;
-
 
 const NameAndSurname = styled.h1`
   font-family: Roboto;
@@ -105,13 +106,12 @@ const Description = styled.h1`
 
 const GreenLine = styled.div`
   background-color: #acf2d3;
-  padding-top: 10px;
-  padding-left: 20px;
-  background: #acf2d3;
-  border: 1px solid #36da51;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 30px;
+  border-top: none;
+  height: 90%;
+  box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  padding-top: 20px;
+  margin-bottom: 5px;
 `;
 
 const SkillsImg = styled.img`
@@ -130,4 +130,3 @@ const Univesity = styled.h1`
   line-height: 21px;
   color: #4fb084;
 `;
-

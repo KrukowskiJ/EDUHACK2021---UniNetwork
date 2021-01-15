@@ -6,7 +6,7 @@ import prjData from "../../data/projects.json";
 
 
 
-export default () => {
+export default (data) => {
     return (
         <div>
             <TitleLine>
@@ -14,7 +14,7 @@ export default () => {
                     Health Point
                 </Title>
             </TitleLine>
-            <ProjectBox data={prjData[0]} />
+            <ProjectBox data={data || prjData[0]} />
         </div>
     );
 }

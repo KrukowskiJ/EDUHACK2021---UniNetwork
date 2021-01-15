@@ -15,27 +15,26 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 function App() {
   return (
-    <div>
+    <Router>
       <TopMenu />
       <Container>
         <Row>
           <Col md={4}>
-
             <LeftMenu />
           </Col>
           <Col md={8}>
-            <Router>
-              <div className="container">
-                <Route exact path="/" component={Swipe} />
-                <Route path="/projects" component={ProjectList} />
-                <Route exact path="/matches" component={Matches} />
-                <Route path="/profile" component={Profile} />
-              </div>
-            </Router>
+
+            <div className="container">
+              <Route exact path="/" component={Swipe} />
+              <Route path="/projects" component={ProjectList} />
+              <Route exact path="/matches" component={Matches} />
+              <Route path="/profile" component={Profile} />
+            </div>
+
           </Col>
         </Row>
       </Container>
-    </div>
+    </Router>
   );
 }
 

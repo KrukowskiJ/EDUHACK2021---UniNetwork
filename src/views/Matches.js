@@ -33,23 +33,36 @@ const MyImg = styled.img`
 `
 
 const CardBorder = styled.div`
-border: solid 5px #4C6C84;
+border: solid 5px rgba(76, 108, 132,  0.6);
 border-top: none;
-height: 20em;
+height: 100%;
+padding: 4%;
 `
 
 const GreenBox = styled.div`
 background-color:#ACF2D3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-height: 75px;
-
+height: 74px;
 `
 const Team_name = styled.h4`
 color: #000000;
-margin: auto;
+margin-top: 25px;
+margin-left: 5px;
 text-align: left;
 font-size: 24px;
-margin: 1em;
+`
+const Header = styled.h4`
+color: #000000;
+margin: auto;
+text-align: left;
+font-size: 14px;
+`
+
+const Description = styled.h5`
+color: #000000;
+margin: auto;
+text-align: left;
+font-size: 11px;
 `
 
 
@@ -68,9 +81,13 @@ const Profile_card = () => {
       </GreenBox>
 
       <CardBorder>
-        <Container>
-
-        </Container>
+        <Header>UNIVERSITY</Header>
+        <Header>SHORT DESCRIPTION</Header>
+        <Header>SKILLS</Header>
+        <Header>LEVEL</Header>
+        <Header>DESCRIPTION</Header>
+        <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.</Description>
+        <Header>DATE</Header>
       </CardBorder >
     </Col>
   );

@@ -1,5 +1,7 @@
 [
   {
+    "name": "Project 1",
+    "logo": 1,
     "uni": "",
     "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.",
     "skills": [0, 1, 0, 1],
@@ -8,6 +10,8 @@
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis."
   },
   {
+    "name": "Project 1",
+    "logo": 1,
     "uni": "",
     "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.",
     "skills": [0, 1, 0, 1],
@@ -16,6 +20,8 @@
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis."
   },
   {
+    "name": "Project 1",
+    "logo": 1,
     "uni": "",
     "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.",
     "skills": [0, 1, 0, 1],

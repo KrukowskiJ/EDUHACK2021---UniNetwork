@@ -20,10 +20,10 @@ function App() {
       <TopMenu />
       <Container fluid={true} >
         <Row>
-          <Col md={4} style = {{padding: 0}}>
+          <Col md={3} style = {{padding: 0}}>
             <LeftMenu />
           </Col>
-          <Col md={8}>
+          <Col>
 
             <div className="container">
               <Route exact path="/" component={Swipe} />

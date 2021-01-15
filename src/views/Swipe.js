@@ -13,7 +13,7 @@ export default () => {
   const [BGstyles, chagneBG] = useState({
     1: { data: prjData[0], marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
     2: { data: prjData[1], marginTop: -60, opacity: 0.2, zIndex: -20, left: 0 },
-    3: { data: prjData[2], marginTop: 0, opacity: 1, zIndex: 20, left: 0 },
+    3: { data: prjData[2], marginTop: 30, opacity: 1, zIndex: 20, left: 0 },
     4: { data: prjData[3], marginTop: 0, opacity: 0, zIndex: 20, left: 3000 },
   });
 
@@ -44,8 +44,6 @@ export default () => {
   return (
     <>
       <SectionTitle title="Swipe" />
-      <GreenBox />
-
       <Background styles={BGstyles[1]} >
         <Card data={BGstyles[1].data} LikeHandler={LikeHandler} />
       </Background>
@@ -72,24 +70,27 @@ export default () => {
 const Card = ({ data, LikeHandler }) => {
 
   return (
-    <CardBorder>
-      <Container>
-        <ProjectBox data={data}></ProjectBox>
-        <Row>
-          <Col>
-            <Row>
-              <Col>
-                <Like onClick={() => LikeHandler(true)} src={Likepng} />
-              </Col>
-              <Col>
-                <Like onClick={() => LikeHandler(false)} src={Dislikepng} />
-              </Col>
-            </Row>
-          </Col>
-          <Col></Col>
-        </Row>
-      </Container>
-    </CardBorder>
+    <>
+      <GreenBox />
+      <CardBorder>
+        <Container>
+          <ProjectBox data={data}></ProjectBox>
+          <Row>
+            <Col>
+              <Row>
+                <Col>
+                  <Like onClick={() => LikeHandler(true)} src={Likepng} />
+                </Col>
+                <Col>
+                  <Like onClick={() => LikeHandler(false)} src={Dislikepng} />
+                </Col>
+              </Row>
+            </Col>
+            <Col></Col>
+          </Row>
+        </Container>
+      </CardBorder>
+    </>
   )
 
 }
@@ -119,6 +120,9 @@ width:600px;
 `
 const GreenBox = styled.div`
 background-color:#ACF2D3;
+border:solid 5px #ACF2D3;
+width:100%;
+height:30px
 
 `
 const Like = styled.img`

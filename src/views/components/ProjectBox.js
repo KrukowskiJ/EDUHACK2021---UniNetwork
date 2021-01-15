@@ -9,62 +9,68 @@ import StarEmpty from "../../img/starempty.png"
 
 export default () => {
   return (
-    <Box>
-        <Row>
-            <Col md="6">
-                <Title>
-                    UNIVERSITY
-                </Title>
-                <UniversityTitle>
-                    MILITARY UNIVERSITY OF TECHNOLOGY
-                </UniversityTitle>
-                <Title>
-                    SHORT DESCRIPTION
-                </Title>
-                <ShortDescription>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
-                </ShortDescription>
-                <Title>
-                    SKILLS
-                </Title>
-
-                <Row>
-                     <SkillBox skill="Programming" />
-                     <SkillBox skill="Biology" />
-                     <SkillBoxEmpty skill="Physic" />
-                     <SkillBox skill="Project Managment" />
-                </Row>
-
-                <Title>
-                    DATE
-                </Title>
-                <Date>
-                    01.2021 - 12.2021
-                </Date>
-            </Col>
-            <Col md="6">
-                <Title>
-                    LEVEL
-                </Title>
-                
-                <div>
-                    <Star src={StarFull} />
-                    <Star src={StarFull} />
-                    <Star src={StarFull} />
-                    <Star src={StarEmpty} />
-                    <Star src={StarEmpty} />
-                </div>
-
-                <Title>
-                    DESCRIPTION
-                </Title>
-                <Description>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
-                </Description>
-            </Col>
-        </Row>
-    </Box>
+    <Project />
   );
+}
+
+const Project =()=>{
+    return(
+        <Box>
+            <Row>
+                <Col md="6">
+                    <Title>
+                        UNIVERSITY
+                    </Title>
+                    <UniversityTitle>
+                        MILITARY UNIVERSITY OF TECHNOLOGY
+                    </UniversityTitle>
+                    <Title>
+                        SHORT DESCRIPTION
+                    </Title>
+                    <ShortDescription>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
+                    </ShortDescription>
+                    <Title>
+                        SKILLS
+                    </Title>
+
+                    <Row>
+                        <SkillBox skill="Programming" />
+                        <SkillBox skill="Biology" />
+                        <SkillBoxEmpty skill="Physic" />
+                        <SkillBox skill="Project Managment" />
+                    </Row>
+
+                    <Title>
+                        DATE
+                    </Title>
+                    <Date>
+                        01.2021 - 12.2021
+                    </Date>
+                </Col>
+                <Col md="6">
+                    <Title>
+                        LEVEL
+                    </Title>
+                    
+                    <div>
+                        <Star src={StarFull} />
+                        <Star src={StarFull} />
+                        <Star src={StarFull} />
+                        <Star src={StarEmpty} />
+                        <Star src={StarEmpty} />
+                    </div>
+
+                    <Title>
+                        DESCRIPTION
+                    </Title>
+                    <Description>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
+                    </Description>
+                </Col>
+            </Row>
+        </Box>
+    );
 }
 
 const Box = styled.div`

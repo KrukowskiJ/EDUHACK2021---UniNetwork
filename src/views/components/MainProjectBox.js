@@ -18,6 +18,7 @@ export default () => {
 }
 
 const TitleLine = styled.div`
+    margin-top: 40px; 
     padding-left: 20px; 
     background: #ACF2D3;
     box-sizing: border-box;

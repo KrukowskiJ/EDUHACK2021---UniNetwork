@@ -6,6 +6,8 @@ export default () => {
     <div>
         <SectionTitle title="FIND YOUR PROJECT" />
         <MainProjectBox /> 
+        <MainProjectBox /> 
+        <MainProjectBox /> 
     </div>
   );
 }

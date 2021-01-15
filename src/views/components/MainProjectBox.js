@@ -6,7 +6,7 @@ import prjData from "../../data/projects.json";
 
 
 
-export default (data) => {
+export default ({data}) => {
     return (
         <div>
             <TitleLine>

@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 export default (props) => {
   return (
-    <Title>
+    <Header>
       {props.title}
-    </Title>
+    </Header>
   );
 }
 
-const Title = styled.h3`
-    color: #4FB084;
+
+const Header = styled.div`
+    color: #ACF2D3;
     margin: auto;
     text-align: center;
     font-size: 40px;
-    margin:1em;
 `

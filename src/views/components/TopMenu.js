@@ -15,12 +15,17 @@ export default () => {
   return (
 
         <Heading>
-
+            <Link to='swipe'>swipe</Link> {" "}
       <h1>temp menu</h1>
       <Link to='projects'>Projects</Link> {" "}
       <Link to='matches'>matches</Link> {" "}
       <Link to='profile'>profile</Link> {" "}
+
         </Heading>
+
+
+   
+
   );
 }
 

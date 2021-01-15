@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 import styled from "styled-components";
 import SkillBox from "../atoms/SkillBox";
+import SkillBoxEmpty from '../atoms/SkillBoxEmpty'
 
 export default () => {
   return (
@@ -21,6 +22,7 @@ export default () => {
                 <Row>
                      <SkillBox skill="Programming" />
                      <SkillBox skill="Biology" />
+                     <SkillBoxEmpty skill="Physic" />
                      <SkillBox skill="Project Managment" />
                 </Row>
 

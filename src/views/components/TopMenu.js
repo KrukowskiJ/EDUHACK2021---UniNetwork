@@ -10,39 +10,41 @@ import generatedText from './../../img/generatedtext.png'
 import filters from './../../img/filtres.png'
 
 const Heading = styled.div`
+    height: 10vh;
+    width: 100vw;
     min-height: 100px;
    min-width: 100px;
     color: red;
     background: #4C6C84;
     margin: 0;
     
+  
+    
 `;
 
 const GeneratedText = styled.img`
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-height: 50%;
-width: 30%;
-margin-top: 8px;
+
+width: 35%;
+
 float: right;
-margin-top: 1.2%;
+margin-top: 1.1%;
+
 
 `
 
 const Logo = styled.img`
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-height: 60px;
-width: 60px;
-margin-top: 8px;
+height: 70%;
+
 float: left;
-margin: 1%;
+margin-top: 0.8%;
+margin-left: 0.7%;
+
 
 `
 
 const Filters = styled.img`
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-height: 60px;
-width: 60px;
-margin-top: 8px;
+
+height: 60%;
 float: right;
 margin-top: 1%;
 margin-right: 0.5%;

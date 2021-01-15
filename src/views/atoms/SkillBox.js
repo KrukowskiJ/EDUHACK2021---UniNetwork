@@ -17,6 +17,7 @@ const Box = styled.div`
     padding-left:10px;
     padding-right: 10px; 
     margin: 5px;
+    border: 3px solid #ACF2D3;
 `
 
 const Title = styled.h1`

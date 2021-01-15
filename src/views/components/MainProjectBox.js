@@ -5,7 +5,8 @@ import styled from "styled-components";
 import prjData from "../../data/projects.json";
 
 
-export default () => {
+
+export default ({data}) => {
     return (
         <div>
             <TitleLine>
@@ -13,22 +14,22 @@ export default () => {
                     Health Point
                 </Title>
             </TitleLine>
-            <ProjectBox data={prjData[0]} />
+            <ProjectBox data={data || prjData[0]} />
         </div>
     );
 }
 
 const TitleLine = styled.div`
-    background-color:#ACF2D3;
-    padding-top: 10px;
+    margin-top: 40px; 
     padding-left: 20px; 
     background: #ACF2D3;
-    border: 1px solid #36DA51;
     box-sizing: border-box;
+    background-color:#ACF2D3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
 const Title = styled.h1`
+    padding: 10px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;

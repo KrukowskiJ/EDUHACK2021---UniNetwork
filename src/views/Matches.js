@@ -12,12 +12,13 @@ export default () => {
       <div>
         <SectionTitle title="YOUR MATCHES" />
       </div>
+      <ScrollView>
+        <Card />
 
-      <Card />
+        <Card />
 
-      <Card />
-
-      <Card />
+        <Card />
+      </ScrollView>
     </>
   );
 }
@@ -39,8 +40,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-top: 20px; 
 `
 const Two_Cards = styled.div`
-    padding: 0px;
+    padding: 10px;
     margin-top: 60px; 
+    margin-bottom: 90px; 
     border: none;
 `
 
@@ -80,7 +82,10 @@ const Date = styled.h1`
     line-height: 16px;
     color: #7A7A7A;
 `
-
+const ScrollView = styled.div`
+overflow:scroll;
+height:80vh;
+`
 const Description = styled.h1`
     font-family: Roboto;
     font-style: normal;

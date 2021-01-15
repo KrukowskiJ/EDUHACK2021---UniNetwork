@@ -16,6 +16,6 @@ export default () => {
 }
 
 const ScrollView = styled.div`
-overflow:scroll;
-height:80vh;
+  overflow:scroll;
+  height:80vh;
 `

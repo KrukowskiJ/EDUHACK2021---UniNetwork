@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LeftMenu= () => {
+export default () => {
   return (
     <div className="container">
       <h1>Menu</h1>
@@ -8,4 +8,4 @@ const LeftMenu= () => {
   );
 }
 
-export default LeftMenu;
+

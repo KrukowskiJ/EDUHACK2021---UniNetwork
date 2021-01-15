@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TopMenu= () => {
+export default () => {
   return (
     <div className="container">
       <h1>Menu</h1>
@@ -8,4 +8,3 @@ const TopMenu= () => {
   );
 }
 
-export default TopMenu;

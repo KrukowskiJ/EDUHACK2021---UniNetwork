@@ -5,26 +5,28 @@ import SkillBox from "../atoms/SkillBox";
 import SkillBoxEmpty from '../atoms/SkillBoxEmpty'
 
 export default ({ data }) => {
+    console.log(data)
     return (
         <Box>
             <Row>
                 <Col md="6">
                     <Title>
-                        {data.name}
-                    </Title>
+                        UNIVERSITY
+                </Title>
                     <UniversityTitle>
-                        MILITARY UNIVERSITY OF TECHNOLOGY
-                </UniversityTitle>
+                        {data.uni}
+                    </UniversityTitle>
                     <Title>
                         SHORT DESCRIPTION
                 </Title>
                     <ShortDescription>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
-                </ShortDescription>
+                        {data.shortDesc}
+                    </ShortDescription>
                     <Title>
                         SKILLS
                 </Title>
-
+                    {/* to trzeba przemapować */}
+                    {/* {data.skills} */}
                     <Row>
                         <SkillBox skill="Programming" />
                         <SkillBox skill="Biology" />
@@ -36,19 +38,19 @@ export default ({ data }) => {
                         DATE
                 </Title>
                     <Date>
-                        01.2021 - 12.2021
-                </Date>
+                        {data.date}
+                    </Date>
                 </Col>
                 <Col md="6">
                     <Title>
                         LEVEL
-                </Title>
+                    </Title>
                     <Title>
                         DESCRIPTION
-                </Title>
+                    </Title>
                     <Description>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
-                </Description>
+                        {data.desc}
+                    </Description>
                 </Col>
             </Row>
         </Box>
@@ -81,7 +83,6 @@ const ShortDescription = styled.h1`
     font-weight: bold;
     font-size: 15px;
     line-height: 16px;
-
     color: #989898;
 `
 

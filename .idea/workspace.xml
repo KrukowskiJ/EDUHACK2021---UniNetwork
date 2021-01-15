@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbe0bf44-0c66-4360-b941-1cbf54c26be2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/generatedtext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/components/LeftMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/LeftMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/components/TopMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/TopMenu.js" afterDir="false" />
     </list>
@@ -51,13 +54,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.karma.karma_node_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +78,7 @@
       <workItem from="1610733190282" duration="1216000" />
       <workItem from="1610734407788" duration="3470000" />
       <workItem from="1610737898744" duration="9000" />
-      <workItem from="1610737911169" duration="1111000" />
+      <workItem from="1610737911169" duration="7424000" />
     </task>
     <servers />
   </component>

@@ -1,11 +1,9 @@
 import React from 'react';
 
-const ProjectList= () => {
+export default () => {
   return (
     <div className="container">
       <h1>ProjectList</h1>
     </div>
   );
 }
-
-export default ProjectList;

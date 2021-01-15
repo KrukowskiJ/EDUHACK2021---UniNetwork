@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { Container, Row, Col } from 'react-bootstrap';
 import logo from '../img/matches_header.png';
 import SkillBox from "./atoms/SkillBox";
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 export default () => {
   return (
@@ -21,6 +22,14 @@ export default () => {
         <Profile_card></Profile_card>
 
       </Row>
+      <Row>
+
+        <Profile_card></Profile_card>
+
+        <Profile_card></Profile_card>
+
+      </Row>
+
     </>
   );
 }

@@ -11,6 +11,7 @@ import Swipe from './views/Swipe';
 import TopMenu from "./views/components/TopMenu";
 import LeftMenu from "./views/components/LeftMenu";
 import { Container, Row, Col } from 'react-bootstrap'
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 
 function App() {

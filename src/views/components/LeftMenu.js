@@ -15,6 +15,9 @@ const Pojemnik = styled.div`
   margin: 0
 `
 
+
+
+
 export default () => {
   return (
 

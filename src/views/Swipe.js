@@ -10,9 +10,9 @@ export default () => {
 
   const [BGstyles, chagneBG] = useState({
     1: { data: {}, marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
-    2: { data: {}, marginTop: -20, opacity: 0.2, zIndex: -20, left: 0 },
-    3: { data: {}, marginTop: 0, opacity: 1, zIndex: 0, left: 0 },
-    4: { data: {}, marginTop: 0, opacity: 0, zIndex: 0, left: 3000 },
+    2: { data: {}, marginTop: -60, opacity: 0.2, zIndex: -20, left: 0 },
+    3: { data: {}, marginTop: 0, opacity: 1, zIndex: 20, left: 0 },
+    4: { data: {}, marginTop: 0, opacity: 0, zIndex: 20, left: 3000 },
   });
 
   const LikeHandler = (isGood) => {
@@ -119,8 +119,9 @@ const Card = ({ data, LikeHandler }) => {
 
 const Background = styled.div`
 transition: all 2s ease;
+/* transition: z-index 0s; */
 position:fixed;
-margin-left:30vw;
+margin-left:40vw;
 margin-top:${props => props.styles.marginTop}px;
 opacity:${props => props.styles.opacity};
 z-index:${props => props.styles.zIndex};

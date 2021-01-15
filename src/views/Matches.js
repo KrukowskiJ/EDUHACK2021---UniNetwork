@@ -9,27 +9,15 @@ import PerfectScrollbar from 'react-perfect-scrollbar'
 export default () => {
   return (
     <>
-
       <div>
         <SectionTitle title="YOUR MATCHES" />
       </div>
 
+      <Card />
 
-      <Row>
+      <Card />
 
-        <Profile_card></Profile_card>
-
-        <Profile_card></Profile_card>
-
-      </Row>
-      <Row>
-
-        <Profile_card></Profile_card>
-
-        <Profile_card></Profile_card>
-
-      </Row>
-
+      <Card />
     </>
   );
 }
@@ -49,6 +37,11 @@ height: 90%;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 40px;
     padding-top: 20px; 
+`
+const Two_Cards = styled.div`
+    padding: 0px;
+    margin-top: 60px; 
+    border: none;
 `
 
 const GreenBox = styled.div`
@@ -165,5 +158,21 @@ const Profile_card = () => {
                 </Date>
       </CardBorder >
     </Col>
+  );
+}
+
+const Card = () => {
+  return (
+    <Two_Cards>
+
+      <Row>
+
+        <Profile_card></Profile_card>
+
+        <Profile_card></Profile_card>
+
+      </Row>
+
+    </Two_Cards>
   );
 }

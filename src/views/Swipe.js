@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from "styled-components"
 import SectionTitle from "./atoms/SectionTitle";
@@ -7,11 +7,35 @@ import Dislikepng from "../img/dislike.png"
 
 export default () => {
 
+  const [BGstyles, chagneBG] = useState({
+    1: { marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
+    2: { marginTop: -20, opacity: 0.2, zIndex: -20, left: 0 },
+    3: { marginTop: 0, opacity: 1, zIndex: 0, left: 0 },
+    4: { marginTop: 0, opacity: 0, zIndex: 0, left: 3000 },
+  });
+
   const LikeHandler = (isGood) => {
 
-    // if ()
+    const calcStyles = (oldOne) => {
+      if (oldOne.left > 0) {
+        if (isGood) return { ...oldOne, left: 3000 }
+        return { ...oldOne, left: -3000 }
+      }
+      return oldOne
 
+    }
+    // if ()
+    console.log(isGood)
+    let newSytles = {
+      1: calcStyles(BGstyles[2]),
+      2: calcStyles(BGstyles[3]),
+      3: calcStyles(BGstyles[4]),
+      4: calcStyles(BGstyles[1])
+    }
+    chagneBG(newSytles)
   }
+
+
 
 
   return (
@@ -19,16 +43,23 @@ export default () => {
       <SectionTitle title="Swipe" />
       <GreenBox />
 
-      <Background styles={{ marginTop: -40, opacity: 0.4, zIndex: -30 }} >
+      <Background styles={BGstyles[1]} >
+        1
         <Card LikeHandler={LikeHandler} />
       </Background>
 
-      <Background styles={{ marginTop: -20, opacity: 0.2, zIndex: -20 }}  >
+      <Background styles={BGstyles[2]}  >
+        2
         <Card LikeHandler={LikeHandler} />
       </Background>
 
-      <Background styles={{ marginTop: 0, opacity: 1, zIndex: 0 }}  >
+      <Background styles={BGstyles[3]}  >
+        3
+        <Card LikeHandler={LikeHandler} />
+      </Background>
 
+      <Background styles={BGstyles[4]}  >
+        4
         <Card LikeHandler={LikeHandler} />
       </Background>
 
@@ -60,10 +91,10 @@ const Card = ({ data, LikeHandler }) => {
             </Row>
             <Row>
               <Col>
-                <Like onClick={LikeHandler(true)} src={Likepng} />
+                <Like onClick={() => LikeHandler(true)} src={Likepng} />
               </Col>
               <Col>
-                <Like onClick={LikeHandler(false)} src={Dislikepng} />
+                <Like onClick={() => LikeHandler(false)} src={Dislikepng} />
               </Col>
             </Row>
           </Col>
@@ -79,10 +110,14 @@ const Card = ({ data, LikeHandler }) => {
 
 
 const Background = styled.div`
+transition: all 2s ease;
 position:fixed;
+margin-left:30vw;
 margin-top:${props => props.styles.marginTop}px;
 opacity:${props => props.styles.opacity};
 z-index:${props => props.styles.zIndex};
+left:${props => props.styles.left}px;
+
 `
 
 

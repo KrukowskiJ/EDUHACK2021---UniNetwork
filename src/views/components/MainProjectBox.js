@@ -2,19 +2,21 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 import ProjectBox from './ProjectBox'
 import styled from "styled-components";
+import prjData from "../../data/projects.json";
+
 
 
 export default () => {
-  return (
-    <div>
-        <TitleLine>
-            <Title>
-                Health Point
-            </Title>
-        </TitleLine>
-        <ProjectBox /> 
-    </div>
-  );
+    return (
+        <div>
+            <TitleLine>
+                <Title>
+                    Health Point
+                </Title>
+            </TitleLine>
+            <ProjectBox data={prjData[0]} />
+        </div>
+    );
 }
 
 const TitleLine = styled.div`

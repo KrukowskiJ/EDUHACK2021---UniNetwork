@@ -47,22 +47,19 @@ export default () => {
       <GreenBox />
 
       <Background styles={BGstyles[1]} >
-        1
         <Card data={BGstyles[1].data} LikeHandler={LikeHandler} />
       </Background>
 
       <Background styles={BGstyles[2]}  >
-        2
         <Card data={BGstyles[2].data} LikeHandler={LikeHandler} />
       </Background>
 
       <Background styles={BGstyles[3]}  >
-        3
+
         <Card data={BGstyles[3].data} LikeHandler={LikeHandler} />
       </Background>
 
       <Background styles={BGstyles[4]}  >
-        4
         <Card data={BGstyles[4].data} LikeHandler={LikeHandler} />
       </Background>
 
@@ -77,7 +74,7 @@ const Card = ({ data, LikeHandler }) => {
   return (
     <CardBorder>
       <Container>
-        <ProjectBox data></ProjectBox>
+        <ProjectBox data={data}></ProjectBox>
         <Row>
           <Col>
             <Row>

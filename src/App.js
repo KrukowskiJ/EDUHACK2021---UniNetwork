@@ -29,6 +29,7 @@ function App() {
               <Route path="/projects" component={ProjectList} />
               <Route exact path="/matches" component={Matches} />
               <Route path="/profile" component={Profile} />
+              <Route path="/swipe" component={Swipe} />
             </div>
 
           </Col>

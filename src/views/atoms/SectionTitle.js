@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default (props) => {
   return (
     <Title>
-        {props.title}
+      {props.title}
     </Title>
   );
 }
@@ -14,4 +14,5 @@ const Title = styled.h3`
     margin: auto;
     text-align: center;
     font-size: 40px;
+    margin:1em;
 `

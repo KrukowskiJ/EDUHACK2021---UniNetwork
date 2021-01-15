@@ -6,13 +6,15 @@ import Likepng from "../img/like.png"
 import Dislikepng from "../img/dislike.png"
 import ProjectBox from './components/ProjectBox'
 
+import prjData from "../data/projects.json";
+
 export default () => {
 
   const [BGstyles, chagneBG] = useState({
-    1: { data: {}, marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
-    2: { data: {}, marginTop: -60, opacity: 0.2, zIndex: -20, left: 0 },
-    3: { data: {}, marginTop: 0, opacity: 1, zIndex: 20, left: 0 },
-    4: { data: {}, marginTop: 0, opacity: 0, zIndex: 20, left: 3000 },
+    1: { data: prjData[0], marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
+    2: { data: prjData[1], marginTop: -60, opacity: 0.2, zIndex: -20, left: 0 },
+    3: { data: prjData[2], marginTop: 0, opacity: 1, zIndex: 20, left: 0 },
+    4: { data: prjData[3], marginTop: 0, opacity: 0, zIndex: 20, left: 3000 },
   });
 
   const LikeHandler = (isGood) => {
@@ -46,22 +48,22 @@ export default () => {
 
       <Background styles={BGstyles[1]} >
         1
-        <Card LikeHandler={LikeHandler} />
+        <Card data={BGstyles[1].data} LikeHandler={LikeHandler} />
       </Background>
 
       <Background styles={BGstyles[2]}  >
         2
-        <Card LikeHandler={LikeHandler} />
+        <Card data={BGstyles[2].data} LikeHandler={LikeHandler} />
       </Background>
 
       <Background styles={BGstyles[3]}  >
         3
-        <Card LikeHandler={LikeHandler} />
+        <Card data={BGstyles[3].data} LikeHandler={LikeHandler} />
       </Background>
 
       <Background styles={BGstyles[4]}  >
         4
-        <Card LikeHandler={LikeHandler} />
+        <Card data={BGstyles[4].data} LikeHandler={LikeHandler} />
       </Background>
 
 
@@ -75,7 +77,7 @@ const Card = ({ data, LikeHandler }) => {
   return (
     <CardBorder>
       <Container>
-        <ProjectBox></ProjectBox>
+        <ProjectBox data></ProjectBox>
         <Row>
           <Col>
             <Row>
@@ -89,27 +91,6 @@ const Card = ({ data, LikeHandler }) => {
           </Col>
           <Col></Col>
         </Row>
-        {/* <Row>
-          <Col>
-            <Row>
-              <Col xs={4}> Prj logo</Col>
-              <Col>
-                Prj name
-                Prj name
-                </Col>
-            </Row>
-            <Row>
-              <Col>
-                University
-                  <br></br>Wat najlepsza uczelnia jest
-                </Col>
-            </Row>
-            
-          </Col>
-          <Col>
-            Prj desc
-            </Col>
-        </Row> */}
       </Container>
     </CardBorder>
   )
@@ -132,10 +113,11 @@ left:${props => props.styles.left}px;
 
 const CardBorder = styled.div`
 border:solid 5px #4C6C84;
+border-top:0px;
 background-color:#fff;
 width:600px;
 /* margin:auto; */
-/* border-top: solid 20px #ACF2D3;  this looks wierd idk why*/
+/* border-top: solid 20px #ACF2D3;  this looks wierd idk why */
 
 `
 const GreenBox = styled.div`

@@ -1,20 +1,39 @@
 import React from 'react';
 import styled from 'styled-components'
+import {Col, Container, Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 
 const Content = styled.div`
-    height: 92vh;
-    width: 100%;
-    color: red;
-    background: #D0D0D0;
-    margin: 0;
-    
+  
 `;
 
 export default () => {
   return (
     <Content>
-      <h1>Menu</h1>
+        <Container>
+
+                <Row>
+                    <h1>temp menu</h1>
+                </Row>
+                <Row>
+                    <Link to='projects'>Projects</Link> {" "}
+                </Row>
+                <Row>
+                    <Link to='matches'>matches</Link> {" "}
+                </Row>
+                <Row>
+                    <Link to='profile'>profile</Link> {" "}
+                </Row>
+
+           
+            <Link to='swipe'>swipe</Link> {" "}
+
+
+
+
+
+        </Container>
     </Content>
   );
 }

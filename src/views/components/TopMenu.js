@@ -18,6 +18,7 @@ const Heading = styled.div`
     background: #4C6C84;
     margin: 0;
     
+    
   
     
 `;
@@ -60,6 +61,7 @@ export default () => {
   return (
 
         <Heading>
+
         <Logo src = {logo} />
 
             <Filters src = {filters} />

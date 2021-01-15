@@ -14,5 +14,6 @@ const Title = styled.h3`
     margin: auto;
     text-align: center;
     font-size: 40px;
+    font-weight: bold;
     margin:1em;
 `

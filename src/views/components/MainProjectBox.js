@@ -9,10 +9,10 @@ export default () => {
         <TitleLine>
             <Title>
                 Health Point
-            </Title>
-        </TitleLine>
-        <ProjectBox /> 
-    </div>
+                </Title>
+            </TitleLine>
+            <ProjectBox /> 
+        </div>
   );
 }
 

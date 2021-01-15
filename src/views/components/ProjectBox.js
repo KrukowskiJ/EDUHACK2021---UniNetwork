@@ -3,6 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap'
 import styled from "styled-components";
 import SkillBox from "../atoms/SkillBox";
 import SkillBoxEmpty from '../atoms/SkillBoxEmpty'
+import StarFull from "../../img/starfull.png"
+import StarEmpty from "../../img/starempty.png"
+
 
 export default () => {
   return (
@@ -43,6 +46,15 @@ export default () => {
                 <Title>
                     LEVEL
                 </Title>
+                
+                <div>
+                    <Star src={StarFull} />
+                    <Star src={StarFull} />
+                    <Star src={StarFull} />
+                    <Star src={StarEmpty} />
+                    <Star src={StarEmpty} />
+                </div>
+
                 <Title>
                     DESCRIPTION
                 </Title>
@@ -101,4 +113,8 @@ const Description=styled.h1`
     font-size: 14px;
     line-height: 16px;
     color: #989898;
+`
+
+const Star = styled.img`
+
 `

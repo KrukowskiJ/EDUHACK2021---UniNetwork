@@ -4,14 +4,15 @@ import styled from "styled-components"
 import SectionTitle from "./atoms/SectionTitle";
 import Likepng from "../img/like.png"
 import Dislikepng from "../img/dislike.png"
+import ProjectBox from './components/ProjectBox'
 
 export default () => {
 
   const [BGstyles, chagneBG] = useState({
-    1: { marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
-    2: { marginTop: -20, opacity: 0.2, zIndex: -20, left: 0 },
-    3: { marginTop: 0, opacity: 1, zIndex: 0, left: 0 },
-    4: { marginTop: 0, opacity: 0, zIndex: 0, left: 3000 },
+    1: { data: {}, marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
+    2: { data: {}, marginTop: -20, opacity: 0.2, zIndex: -20, left: 0 },
+    3: { data: {}, marginTop: 0, opacity: 1, zIndex: 0, left: 0 },
+    4: { data: {}, marginTop: 0, opacity: 0, zIndex: 0, left: 3000 },
   });
 
   const LikeHandler = (isGood) => {
@@ -74,7 +75,21 @@ const Card = ({ data, LikeHandler }) => {
   return (
     <CardBorder>
       <Container>
+        <ProjectBox></ProjectBox>
         <Row>
+          <Col>
+            <Row>
+              <Col>
+                <Like onClick={() => LikeHandler(true)} src={Likepng} />
+              </Col>
+              <Col>
+                <Like onClick={() => LikeHandler(false)} src={Dislikepng} />
+              </Col>
+            </Row>
+          </Col>
+          <Col></Col>
+        </Row>
+        {/* <Row>
           <Col>
             <Row>
               <Col xs={4}> Prj logo</Col>
@@ -89,19 +104,12 @@ const Card = ({ data, LikeHandler }) => {
                   <br></br>Wat najlepsza uczelnia jest
                 </Col>
             </Row>
-            <Row>
-              <Col>
-                <Like onClick={() => LikeHandler(true)} src={Likepng} />
-              </Col>
-              <Col>
-                <Like onClick={() => LikeHandler(false)} src={Dislikepng} />
-              </Col>
-            </Row>
+            
           </Col>
           <Col>
             Prj desc
             </Col>
-        </Row>
+        </Row> */}
       </Container>
     </CardBorder>
   )

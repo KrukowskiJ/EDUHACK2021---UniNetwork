@@ -20,8 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbe0bf44-0c66-4360-b941-1cbf54c26be2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/match.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/search.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/components/LeftMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/LeftMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/components/TopMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/TopMenu.js" afterDir="false" />
     </list>
@@ -75,7 +80,7 @@
       <workItem from="1610733190282" duration="1216000" />
       <workItem from="1610734407788" duration="3470000" />
       <workItem from="1610737898744" duration="9000" />
-      <workItem from="1610737911169" duration="9364000" />
+      <workItem from="1610737911169" duration="13549000" />
     </task>
     <servers />
   </component>

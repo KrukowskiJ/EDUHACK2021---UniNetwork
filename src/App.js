@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <TopMenu />
-      <Container fluid={true}>
+      <Container fluid={true} >
         <Row>
           <Col md={4} style = {{padding: 0}}>
             <LeftMenu />

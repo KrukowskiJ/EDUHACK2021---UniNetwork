@@ -73,9 +73,9 @@ const GreenLine = styled.div`
   background-color: #acf2d3;
   border-top: none;
   height: 90%;
-  box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
-  padding: 40px;
-  padding-top: 20px;
+  /* box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25); */
+  /* padding: 40px; */
+  padding-top: 30px;
   margin-bottom: 5px;
 `;
 

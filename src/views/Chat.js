@@ -2,30 +2,30 @@ import React from 'react';
 import styled from "styled-components";
 import SectionTitle from "./atoms/SectionTitle";
 import WatLogo from "../img/wat.png"
-import Men from "../img/men.png"
+import Men from "../img/zdjecie2.png"
 import { Container, Row, Col } from 'react-bootstrap'
 import Send from "../img/send.png";
 
 export default () => {
-  return (
-    <>
-        <SectionTitle title="CHAT WITH YOUR MATCH" />
-        <TitleDesc>CYBERSECURITY SCIENCE CLUB</TitleDesc>
-        <ScrollView>
-            <TitleLine>
+    return (
+        <>
+            <SectionTitle title="CHAT WITH YOUR MATCH" />
+            <TitleDesc>CYBERSECURITY SCIENCE CLUB</TitleDesc>
+            <ScrollView>
+                <TitleLine>
                     <Title>
                         Health Point
                     </Title>
-            </TitleLine>
+                </TitleLine>
 
-                <MessageTo message="Hi, You’re interested in our project?"/>
+                <MessageTo message="Hi, You’re interested in our project?" />
                 <MessageFrom message="Hi! I am new to coding, but want to join you!" />
-                <MessageTo message="We love your passion! Let’s meet!"/>
+                <MessageTo message="We love your passion! Let’s meet!" />
                 <MessageFrom message="I am free whenever you want!" />
-                <SendMessageBox /> 
-        </ScrollView>
-    </>
-  );
+                <SendMessageBox />
+            </ScrollView>
+        </>
+    );
 }
 
 const ScrollView = styled.div`
@@ -34,25 +34,25 @@ const ScrollView = styled.div`
     height:30vw; 
     margin-bottom:20px;
 `
-const SendMessageBox=()=>{
-    return(
+const SendMessageBox = () => {
+    return (
         <>
-        <Row>
-            <Col md="1" />
-            <Col>
-                <MessageInput placeholder="Message" />
-                <SendIcon src={Send} />
-            </Col>
-        </Row>
+            <Row>
+                <Col md="1" />
+                <Col>
+                    <MessageInput placeholder="Message" />
+                    <SendIcon src={Send} />
+                </Col>
+            </Row>
         </>
     );
 }
 
-const SendIcon=styled.img`
+const SendIcon = styled.img`
 
 `
 
-const MessageInput=styled.input`
+const MessageInput = styled.input`
     background: #EBEBEB;
     border: 3px solid #ACF2D3;
     box-sizing: border-box;
@@ -65,15 +65,15 @@ const MessageInput=styled.input`
     border-radius: 40px;
 `
 
-const MessageTo = (props)=>{
-    return(
+const MessageTo = (props) => {
+    return (
         <Row>
             <Col md="7">
                 <BoxTo>
-                    <UniversityLogo src={WatLogo}/>
-                    <MessageBoxFrom> 
+                    <UniversityLogo src={WatLogo} />
+                    <MessageBoxFrom>
                         <Message>
-                        {props.message}
+                            {props.message}
                         </Message>
                     </MessageBoxFrom>
                 </BoxTo>
@@ -82,18 +82,18 @@ const MessageTo = (props)=>{
     );
 }
 
-const MessageFrom = (props)=>{
-    return(
+const MessageFrom = (props) => {
+    return (
         <Row>
             <Col md="5"></Col>
             <Col>
                 <BoxFrom>
-                    <MessageBoxTo> 
+                    <MessageBoxTo>
                         <Message>
                             {props.message}
                         </Message>
                     </MessageBoxTo>
-                    <UniversityLogo src={Men}/>
+                    <UniversityLogo src={Men} />
                 </BoxFrom>
             </Col>
         </Row>
@@ -101,12 +101,12 @@ const MessageFrom = (props)=>{
     );
 }
 
-const BoxTo=styled.div`
+const BoxTo = styled.div`
   display: flex;
   margin-top:5px; 
 `
 
-const BoxFrom=styled.div`
+const BoxFrom = styled.div`
   display: flex;
   align-self:right;
   margin-top:5px; 
@@ -115,7 +115,7 @@ const BoxFrom=styled.div`
 const UniversityLogo = styled.img`
 
 `
-const MessageBoxTo=styled.div`
+const MessageBoxTo = styled.div`
     background: #E2F3EC;
     border: 3px solid #ACF2D3;
     box-sizing: border-box;
@@ -129,7 +129,7 @@ const MessageBoxTo=styled.div`
     margin-right:5px;
 `
 
-const MessageBoxFrom=styled.div`
+const MessageBoxFrom = styled.div`
     background: #E2F3EC;
     border: 3px solid #ACF2D3;
     box-sizing: border-box;
@@ -144,7 +144,7 @@ const MessageBoxFrom=styled.div`
     margin-left:5px;
 `
 
-const Message=styled.h1`
+const Message = styled.h1`
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;

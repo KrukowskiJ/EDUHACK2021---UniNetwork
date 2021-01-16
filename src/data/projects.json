@@ -2,17 +2,17 @@
   {
     "name": "Project 1",
     "logo": 1,
-    "uni": "WAT",
-    "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.",
+    "uni": "Warsaw University",
+    "shortDesc": "We want to create a new platform for students to find ecology happenings ",
     "skills": [0, 1, 0, 1],
     "date": "01.2021 - 12.2021",
     "level": 2,
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis."
+    "desc": "We are looking for a beginer to help us code the platform. We already have an expirenced developer from computer sinces, so we are open for begginers! If you've got motivation just join us!"
   },
   {
     "name": "Project 2",
     "logo": 1,
-    "uni": "UW",
+    "uni": "Warsaw University",
     "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.",
     "skills": [0, 1, 0, 1],
     "date": "01.2021 - 12.2021",

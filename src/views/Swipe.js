@@ -10,11 +10,12 @@ import prjData from "../data/projects.json";
 
 export default () => {
 
+  console.log(prjData[0])
   const [BGstyles, chagneBG] = useState({
-    1: { data: prjData[0], marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
-    2: { data: prjData[1], marginTop: -60, opacity: 0.2, zIndex: -20, left: 0 },
-    3: { data: prjData[2], marginTop: 30, opacity: 1, zIndex: 20, left: 0 },
-    4: { data: prjData[3], marginTop: 0, opacity: 0, zIndex: 20, left: 3000 },
+    1: { marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
+    2: { marginTop: -60, opacity: 0.2, zIndex: -20, left: 0 },
+    3: { marginTop: 30, opacity: 1, zIndex: 20, left: 0 },
+    4: { marginTop: 0, opacity: 0, zIndex: 20, left: -3000 },
   });
 
   const LikeHandler = (isGood) => {
@@ -45,20 +46,20 @@ export default () => {
     <>
       <SectionTitle title="Swipe" />
       <Background styles={BGstyles[1]} >
-        <Card data={BGstyles[1].data} LikeHandler={LikeHandler} />
+        <Card data={prjData[0]} LikeHandler={LikeHandler} />
       </Background>
 
       <Background styles={BGstyles[2]}  >
-        <Card data={BGstyles[2].data} LikeHandler={LikeHandler} />
+        <Card data={prjData[1]} LikeHandler={LikeHandler} />
       </Background>
 
       <Background styles={BGstyles[3]}  >
 
-        <Card data={BGstyles[3].data} LikeHandler={LikeHandler} />
+        <Card data={prjData[2]} LikeHandler={LikeHandler} />
       </Background>
 
       <Background styles={BGstyles[4]}  >
-        <Card data={BGstyles[4].data} LikeHandler={LikeHandler} />
+        <Card data={prjData[3]} LikeHandler={LikeHandler} />
       </Background>
 
 
@@ -122,13 +123,16 @@ const GreenBox = styled.div`
 background-color:#ACF2D3;
 border:solid 5px #ACF2D3;
 width:100%;
-height:30px
-
+height:30px;
 `
+
 const Like = styled.img`
+position:fixed;
 /* border: solid 5px #4C6C84; */
 /* border-radius: 50%; */
 /* border-spacing:10px; */
 /* padding:30px; */
-height:60px;
+margin-top:-60px;
+margin-left:30px;
+height:50px;
 `

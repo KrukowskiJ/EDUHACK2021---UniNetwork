@@ -26,10 +26,10 @@ export default () => {
         </BACK_COLOR>
         <Log>
           <Col>
-            <Login placeholder="Login" />
+            <Login placeholder="Login" value="demo123" />
           </Col>
           <Col>
-            <Password placeholder="Password" />
+            <Password placeholder="Password" input type="password" value="demo123" />
           </Col>
           <Col>
             <SignIn onClick={() => { login(true) }} >SIGN IN</SignIn >

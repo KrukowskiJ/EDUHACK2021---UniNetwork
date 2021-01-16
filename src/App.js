@@ -18,7 +18,7 @@ import Chat from './views/Chat'
 
 function App() {
   return (
-    <Router>
+    <Router basename='/demo'>
       <Route exact path="/" component={Login} />
       <TopMenu />
       <Container fluid={true} >

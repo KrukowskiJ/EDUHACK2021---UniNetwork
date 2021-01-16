@@ -10,22 +10,16 @@ import generatedText from './../../img/generatedtext.png'
 import filters from './../../img/filtres.png'
 
 const Heading = styled.div`
-    width: 100vw;
-<<<<<<< HEAD
-    height: 12vh;
-   min-width: 100px;
-=======
-    height: 6vw; 
-    min-width: 100px;
->>>>>>> 72b76bc54a048620de9a3df4089cdc42d9f53c2b
+    width: 100%;
     color: red;
     background: #4C6C84;
     margin: 0;  
 `
 
 const GeneratedText = styled.img`
-    width: 35%;
+    flex: 1;
     float: right;
+    max-height:60px;
     margin-right:40px; 
     margin-top: 25px;
 `

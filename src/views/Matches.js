@@ -1,17 +1,16 @@
 import React from 'react';
 import SectionTitle from "./atoms/SectionTitle";
 import styled from "styled-components"
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import logo from '../img/matches_header.png';
 import SkillBox from "./atoms/SkillBox";
-import PerfectScrollbar from 'react-perfect-scrollbar'
 
 export default () => {
   return (
-    <>
-      <div>
-        <SectionTitle title="YOUR MATCHES" />
-      </div>
+    <Mainn>
+
+      <SectionTitle title="YOUR MATCHES" />
+
       <ScrollView>
         <Card />
 
@@ -19,9 +18,14 @@ export default () => {
 
         <Card />
       </ScrollView>
-    </>
+    </Mainn >
   );
 }
+
+const Mainn = styled.div`
+  height: 100%;
+
+`
 
 const MyImg = styled.img`
   height: 50px;
@@ -31,17 +35,15 @@ const MyImg = styled.img`
 `
 
 const CardBorder = styled.div`
-
 border-top: none;
-height: 90%;
+height: 85%;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 40px;
-    padding-top: 20px; 
+  
+    
 `
 const Two_Cards = styled.div`
-    padding: 10px;
-    margin-top: 60px; 
-    margin-bottom: 90px; 
+    padding: 0px;
     border: none;
 `
 
@@ -160,7 +162,7 @@ const Profile_card = () => {
           DESCRIPTION
                 </Title>
         <Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
+          Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
                 </Description>
         <Title>
           DATE

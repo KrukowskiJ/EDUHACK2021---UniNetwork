@@ -37,8 +37,10 @@ const Text = styled.div`
   margin-top: 18px;
   float: left;
   text-align: center;
+  font-style: normal;
+  font-weight: normal;
   font-family: Roboto;
-  color: black;
+  color: #6D6969;
   font-weight: 100;
   font-size: 25px;
   line-height: 29px;
@@ -78,6 +80,8 @@ const StyledLink = styled(NavLink)`
   display: block;
   font-family: Roboto;
   height: 8vh;
+  border-bottom: 1px solid #D0D0D0;;
+
   &:hover {
     text-decoration: underline;
   }

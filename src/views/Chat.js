@@ -11,21 +11,29 @@ export default () => {
     <>
         <SectionTitle title="CHAT WITH YOUR MATCH" />
         <TitleDesc>CYBERSECURITY SCIENCE CLUB</TitleDesc>
-        <TitleLine>
-                <Title>
-                    Health Point
-                </Title>
-        </TitleLine>
-        
-        <MessageTo message="Hi, You’re interested in our project?"/>
-        <MessageFrom message="Hi! I am new to coding, but want to join you!" />
-        <MessageTo message="We love your passion! Let’s meet!"/>
-        <MessageFrom message="I am free whenever you want!" />
-        <SendMessageBox /> 
+        <ScrollView>
+            <TitleLine>
+                    <Title>
+                        Health Point
+                    </Title>
+            </TitleLine>
+
+                <MessageTo message="Hi, You’re interested in our project?"/>
+                <MessageFrom message="Hi! I am new to coding, but want to join you!" />
+                <MessageTo message="We love your passion! Let’s meet!"/>
+                <MessageFrom message="I am free whenever you want!" />
+                <SendMessageBox /> 
+        </ScrollView>
     </>
   );
 }
 
+const ScrollView = styled.div`
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height:30vw; 
+    margin-bottom:20px;
+`
 const SendMessageBox=()=>{
     return(
         <>

@@ -4,6 +4,9 @@ import styled from "styled-components"
 import { Row, Col } from 'react-bootstrap';
 import logo from '../img/matches_header.png';
 import SkillBox from "./atoms/SkillBox";
+import prjData from "../data/projects.json";
+import StarFull from "../img/starfull.png"
+import StarEmpty from "../img/starempty.png"
 
 export default () => {
   return (
@@ -12,11 +15,11 @@ export default () => {
       <SectionTitle title="YOUR MATCHES" />
 
       <ScrollView>
-        <Card />
+        <Card data={prjData[0]} data2={prjData[1]} />
 
-        <Card />
+        <Card data={prjData[2]} data2={prjData[3]} />
 
-        <Card />
+        <Card data={prjData[0]} data2={prjData[1]} />
       </ScrollView>
     </Mainn >
   );
@@ -46,7 +49,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 const Two_Cards = styled.div`
     padding: 0px;
     border: none;
-    
+    margin-Top:50px;
+    margin-Left: 2px;
+    margin-right: 10px;
 `
 
 const GreenBox = styled.div`
@@ -112,8 +117,11 @@ const Title = styled.h1`
     font-size: 15px;
     margin-top: 10px;
 `
+const Star = styled.img`
 
-const Profile_card = () => {
+`
+
+const Profile_card = ({ data }) => {
   return (
     <Col >
       <GreenBox>
@@ -132,14 +140,14 @@ const Profile_card = () => {
           UNIVERSITY
                 </Title>
         <UniversityTitle>
-          MILITARY UNIVERSITY OF TECHNOLOGY
-                </UniversityTitle>
+          {data.uni}
+        </UniversityTitle>
         <Title>
           SHORT DESCRIPTION
                 </Title>
         <ShortDescription>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
-                </ShortDescription>
+          {data.shortDesc}
+        </ShortDescription>
         <Title>
           SKILLS
                 </Title>
@@ -157,35 +165,41 @@ const Profile_card = () => {
         <Title>
           LEVEL
                 </Title>
-        <Date>
-          01.2021 - 12.2021
-                </Date>
+
+        <div>
+          <Star src={StarFull} />
+          <Star src={StarFull} />
+          <Star src={StarFull} />
+          <Star src={StarEmpty} />
+          <Star src={StarEmpty} />
+        </div>
+
         <Title>
           DESCRIPTION
                 </Title>
         <Description>
-          Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.
-                </Description>
+          {data.desc}
+        </Description>
         <Title>
           DATE
                 </Title>
         <Date>
-          01.2021 - 12.2021
-                </Date>
+          {data.date}
+        </Date>
       </CardBorder >
     </Col>
   );
 }
 
-const Card = () => {
+const Card = ({ data, data2 }) => {
   return (
     <Two_Cards>
 
       <Row>
 
-        <Profile_card></Profile_card>
+        <Profile_card data={data}></Profile_card>
 
-        <Profile_card></Profile_card>
+        <Profile_card data={data2}></Profile_card>
 
       </Row>
 

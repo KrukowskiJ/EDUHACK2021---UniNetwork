@@ -1,18 +1,18 @@
 [
   {
-    "name": "Project 1",
+    "name": "Health Point",
     "logo": 1,
     "uni": "Warsaw University",
     "shortDesc": "We want to create a new platform for students to find ecology happenings ",
     "skills": [0, 1, 0, 1],
-    "date": "01.2021 - 12.2021",
-    "level": 2,
+    "date": "01.2021 - 14.2021",
+    "level": 1,
     "desc": "We are looking for a beginer to help us code the platform. We already have an expirenced developer from computer sinces, so we are open for begginers! If you've got motivation just join us!"
   },
   {
-    "name": "Project 2",
+    "name": "Pulse",
     "logo": 1,
-    "uni": "Your University",
+    "uni": "Military University of Technology",
     "shortDesc": "This is a short project that is an example usage of our app",
     "skills": [0, 1, 0, 1],
     "date": "01.2021 - 12.2021",
@@ -20,9 +20,9 @@
     "desc": "This description is much longer, and can contain more information about the project. You have more details here, information about skills and other factor that are not in the other place of the card. Besides the information you can add links or other usfull stuff here!"
   },
   {
-    "name": "Project 3",
+    "name": "Vuer",
     "logo": 1,
-    "uni": "Your University",
+    "uni": "Warsaw University of Technology",
     "shortDesc": "This is a short project that is an example usage of our app",
     "skills": [0, 1, 0, 1],
     "date": "01.2021 - 12.2021",
@@ -30,9 +30,9 @@
     "desc": "This description is much longer, and can contain more information about the project. You have more details here, information about skills and other factor that are not in the other place of the card. Besides the information you can add links or other usfull stuff here!"
   },
   {
-    "name": "Project 4",
+    "name": "MUTANT",
     "logo": 1,
-    "uni": "Your University",
+    "uni": "Warsaw University",
     "shortDesc": "This is a short project that is an example usage of our app",
     "skills": [0, 1, 0, 1],
     "date": "01.2021 - 12.2021",

@@ -128,7 +128,7 @@ const Profile_card = ({ data }) => {
       <GreenBox>
         <Row>
           <Col xs={9}>
-            <Team_name>HEALTH POINT</Team_name>
+            <Team_name>{data.name}</Team_name>
           </Col>
           <Col>
             <Link to={"/chat"}>

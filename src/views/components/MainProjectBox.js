@@ -22,7 +22,7 @@ export default ({ data }) => {
   return (
     <div>
       <TitleLine>
-        <Title>Health Point</Title>
+        <Title>{data.name}</Title>
       </TitleLine>
       <ProjectBox data={data || prjData[0]} />
       <Row>

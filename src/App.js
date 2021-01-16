@@ -23,7 +23,7 @@ function App() {
           <Col xs={3} style={{ padding: 0 }}>
             <LeftMenu />
           </Col>
-          <Col xs={7}>
+          <Col xs={9}>
             <div className="container">
               <Route exact path="/" component={Swipe} />
               <Route path="/projects" component={ProjectList} />

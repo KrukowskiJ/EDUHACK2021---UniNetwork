@@ -6,12 +6,14 @@ import prjData from "../data/projects.json";
 
 export default () => {
   return (
+    <>
+    <SectionTitle title="FIND YOUR PROJECT" />
     <ScrollView>
-      <SectionTitle title="FIND YOUR PROJECT" />
       <MainProjectBox data={prjData[0]} />
       <MainProjectBox data={prjData[1]} />
       <MainProjectBox data={prjData[2]} />
     </ScrollView>
+    </>
   );
 }
 

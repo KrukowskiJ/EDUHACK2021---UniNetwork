@@ -10,6 +10,8 @@ import ProjectList from './views/ProjectList';
 import Swipe from './views/Swipe';
 import TopMenu from "./views/components/TopMenu";
 import LeftMenu from "./views/components/LeftMenu";
+import Login from "./views/Login"
+
 import { Container, Row, Col } from 'react-bootstrap'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 import AddProject from './views/AddProject'
@@ -17,6 +19,7 @@ import AddProject from './views/AddProject'
 function App() {
   return (
     <Router>
+      <Route exact path="/" component={Login} />
       <TopMenu />
       <Container fluid={true} >
         <Row>
@@ -25,14 +28,12 @@ function App() {
           </Col>
           <Col xs={9}>
             <div className="container">
-              <Route exact path="/" component={Swipe} />
               <Route path="/projects" component={ProjectList} />
               <Route exact path="/matches" component={Matches} />
               <Route path="/profile" component={Profile} />
               <Route path="/swipe" component={Swipe} />
               <Route path="/addProject" component={AddProject} />
             </div>
-
           </Col>
         </Row>
       </Container>

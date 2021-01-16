@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components"
 import logo from '../img/logo.png';
 import { Row, Col } from 'react-bootstrap';
 import App from '../App';
 import {
-  Link
+  Redirect
 } from 'react-router-dom';
 
 export default () => {
-  return (
 
+  const [logedin, login] = useState(false)
+
+  if (logedin) {
+    return (
+      <Redirect to="/swipe" />
+    )
+  }
+
+
+  return (
     <Body>
       <Header>
         <BACK_COLOR>
@@ -17,14 +26,13 @@ export default () => {
         </BACK_COLOR>
         <Log>
           <Col>
-            <Login placeholder="      Login" />
+            <Login placeholder="Login" />
           </Col>
           <Col>
-            <Password placeholder="     Password" />
+            <Password placeholder="Password" />
           </Col>
           <Col>
-
-            <SignIn onClick={<Link to="/" component={App} />} >SIGN IN</SignIn >
+            <SignIn onClick={() => { login(true) }} >SIGN IN</SignIn >
           </Col>
         </Log>
       </Header>
@@ -35,7 +43,8 @@ export default () => {
 
 const Body = styled.div`
 height:100vh;
-background-color: #F6F6F6;
+width:100vw;
+/* background-color: #F6F6F6; */
 `
 
 const Logo = styled.img`
@@ -53,6 +62,8 @@ const BACK_COLOR = styled.div`
 const Header = styled.div`
   height: 70px;
   width: 440px;
+  margin:auto;
+  margin-top:20vh;
   background-color: #ACF2D3;
 `
 const Log = styled.div`

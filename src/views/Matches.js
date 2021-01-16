@@ -90,8 +90,10 @@ const Date = styled.h1`
     color: #7A7A7A;
 `
 const ScrollView = styled.div`
-overflow:scroll;
-height:80vh;
+overflow-y:scroll;
+overflow-x:hidden;
+
+height:70vh;
 `
 const Description = styled.h1`
     font-family: Roboto;

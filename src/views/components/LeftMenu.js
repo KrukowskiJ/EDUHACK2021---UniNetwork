@@ -7,9 +7,11 @@ import imageMatches from './../../img/match.png'
 import imageSearch from './../../img/search.png'
 import imageArrow from './../../img/arrow.png'
 
+import imageSwitch from './../../img/search.png'
+
 
 const Content = styled.div`
-  background: #D0D0D0;
+  background: #F6F6F6;
   margin: 0;
   height: 89vh;
  
@@ -25,6 +27,7 @@ const Zielony = styled.div`
   height: 5%;
   width: 100%;
   background: #ACF2D3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 const Przerwa = styled.div`
@@ -33,19 +36,23 @@ const Przerwa = styled.div`
   
 `
 
-const Swipe = styled.div`
+const SwipeProject = styled.div`
   height: 10%;
   width: 100%;
   background: #ACF2D3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 const Arrow = styled.img`
   height: 50%;
    margin: 3%;
+   margin-top: 15%;
   float: left;
 
 `
-const TextSwipe = styled.div`
+const TextSwipeProject = styled.div`
+    font-family: Roboto;
+    color: black;
 
 `
 
@@ -56,15 +63,17 @@ const Matches = styled.div`
 `
 const ImageMatch = styled.img`
   height: 50%;
-  
   margin: 3%;
+  margin-top: 13%;
   float: left;
 `
 
 const TextMatch = styled.div`
-  
+  padding-top: 6.5%;
   float: left;
   text-align: center;
+  font-family: Roboto;
+  color: black;
 `
 
 const ImageSearch = styled.img`
@@ -78,7 +87,11 @@ const Search = styled.div`
   width: 100%;
 `
 const TextSearch = styled.div`
-  
+    padding-top: 4%;
+  float: left;
+  text-align: center;
+  font-family: Roboto;
+  color: black;
 `
 
 const PojemnikZdjecie = styled.div`
@@ -86,6 +99,19 @@ const PojemnikZdjecie = styled.div`
   width: 30%;
   float: left;
 `
+
+const Switch = styled.div`
+  height: 10%;
+  width: 100%;
+`
+
+const ImageSwitch = styled.img`
+   height: 50%;
+  margin: 3%;
+  margin-top: 13%;
+  float: left;
+`
+
 
 export default () => {
   return (
@@ -97,12 +123,12 @@ export default () => {
                 <Container  style = {{padding: 0, height:"100%", width: "100%"}}>
                     <Zielony/>
                     <Pojemnik>
-                    <h1>temp menu</h1>
+                   
                     </Pojemnik>
 
                     <Przerwa></Przerwa>
 
-                <Swipe>
+                <SwipeProject>
                     <Link to='projects'>
                     <PojemnikZdjecie>
                         <Arrow src = {imageArrow}></Arrow>
@@ -110,7 +136,7 @@ export default () => {
                         <TextMatch> Swipe Projects </TextMatch>
                         <div style={{clear: "both"}}></div>
                     </Link> {" "}
-                </Swipe>
+                </SwipeProject>
                 <Matches>
                     <Link to='matches'>
                         <PojemnikZdjecie>
@@ -133,7 +159,14 @@ export default () => {
                     </Link> {" "}
                 </Search>
 
-            <Link to='swipe'>swipe</Link> {" "}
+                    <Switch>
+            <Link to='swipe'>
+                <PojemnikZdjecie>
+                    <ImageSwitch src = {imageSwitch}></ImageSwitch>
+                </PojemnikZdjecie>
+                <TextMatch> Switch </TextMatch>
+            </Link> {" "}
+                    </Switch>
                 </Container>
             </Content>
 

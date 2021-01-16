@@ -11,7 +11,7 @@ import filters from './../../img/filtres.png'
 
 const Heading = styled.div`
     width: 100vw;
-    min-height: 100px;
+    height: 12vh;
    min-width: 100px;
     color: red;
     background: #4C6C84;

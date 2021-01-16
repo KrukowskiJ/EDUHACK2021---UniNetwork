@@ -13,7 +13,7 @@ export default () => {
       <div>
         <SectionTitle title="PROFILE" />
       </div>
-      <GreenLine/>
+      <GreenLine />
       <Box>
         <Row>
           <Col md="6">
@@ -49,10 +49,9 @@ export default () => {
             <BigTittle>SKILLS</BigTittle>
 
             <Row>
-              <SkillBox skill="C++" />
-              <SkillBox skill="Java" />
-              <SkillBoxEmpty skill="SQL" />
-              <SkillBox skill="C" />
+              <SkillBox skill="Programming" />
+              <SkillBox skill="Biology" />
+              <SkillBox skill="Project Managment" />
             </Row>
           </Col>
         </Row>

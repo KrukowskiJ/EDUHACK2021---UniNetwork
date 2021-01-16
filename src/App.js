@@ -14,7 +14,7 @@ import Login from "./views/Login"
 
 import { Container, Row, Col } from 'react-bootstrap'
 import PerfectScrollbar from 'react-perfect-scrollbar'
-import AddProject from './views/AddProject'
+import Chat from './views/Chat'
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
               <Route exact path="/matches" component={Matches} />
               <Route path="/profile" component={Profile} />
               <Route path="/swipe" component={Swipe} />
-              <Route path="/addProject" component={AddProject} />
+              <Route path="/addProject" component={Chat} />
             </div>
           </Col>
         </Row>

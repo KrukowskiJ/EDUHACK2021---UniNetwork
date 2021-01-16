@@ -32,28 +32,22 @@ const Przerwa = styled.div`
   width: 100%;
 `;
 
-const TextMatch = styled.div`
-  padding-top: 6.5%;
+const Text = styled.div`
+  margin-top: 18px;
   float: left;
   text-align: center;
   font-family: Roboto;
   color: black;
 `;
 
-const ImageSearch = styled.img`
+const Image = styled.img`
   height: 30px;
   width: 30px;
-  margin-left: 20px;
-  margin-top: 13%;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 0px;
+  margin-top: 18px;
   float: left;
-`;
-
-const TextSearch = styled.div`
-  padding-top: 6.5%;
-  float: left;
-  text-align: center;
-  font-family: Roboto;
-  color: black;
 `;
 
 const PojemnikZdjecie = styled.div`
@@ -79,7 +73,7 @@ const TabBox = styled.div`
 const StyledLink = styled(NavLink)`
   display: block;
   font-family: Roboto;
-
+  height: 8vh;
   &:hover {
     text-decoration: underline;
   }
@@ -100,18 +94,18 @@ export default () => {
         <TabBox>
           <StyledLink c to="swipe">
             <PojemnikZdjecie>
-              <ImageSearch src={imageArrow}></ImageSearch>
+              <Image src={imageArrow}></Image>
             </PojemnikZdjecie>
-            <TextMatch> Swipe Projects </TextMatch>
+            <Text> Swipe Projects </Text>
             <div style={{ clear: "both" }}></div>
           </StyledLink>{" "}
         </TabBox>
         <TabBox>
           <StyledLink c to="matches">
             <PojemnikZdjecie>
-              <ImageSearch src={imageMatches}></ImageSearch>
+              <Image src={imageMatches}></Image>
             </PojemnikZdjecie>
-            <TextMatch> Match </TextMatch>
+            <Text> Match </Text>
             <div style={{ clear: "both" }}></div>
           </StyledLink>{" "}
         </TabBox>
@@ -119,10 +113,10 @@ export default () => {
         <TabBox>
           <StyledLink c to="projects">
             <PojemnikZdjecie>
-              <ImageSearch src={imageSearch} />
+              <Image src={imageSearch} />
             </PojemnikZdjecie>
 
-            <TextSearch>Find Project</TextSearch>
+            <Text>Find Project</Text>
             <div style={{ clear: "both" }}></div>
           </StyledLink>{" "}
         </TabBox>
@@ -130,10 +124,10 @@ export default () => {
         <TabBox>
           <StyledLink to="addProject">
             <PojemnikZdjecie>
-              <ImageSearch src={imageSearch} />
+              <Image src={imageSearch} />
             </PojemnikZdjecie>
 
-            <TextSearch>Add Project</TextSearch>
+            <Text>Add Project</Text>
             <div style={{ clear: "both" }}></div>
           </StyledLink>{" "}
         </TabBox>
@@ -141,10 +135,10 @@ export default () => {
         <TabBox>
           <StyledLink to="profile">
             <PojemnikZdjecie>
-              <ImageSearch src={imageProfile} />
+              <Image src={imageProfile} />
             </PojemnikZdjecie>
 
-            <TextSearch>Profile</TextSearch>
+            <Text>Profile</Text>
             <div style={{ clear: "both" }}></div>
           </StyledLink>{" "}
         </TabBox>

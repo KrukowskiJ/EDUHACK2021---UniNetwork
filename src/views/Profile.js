@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import SkillBox from "./atoms/SkillBox";
 import SkillBoxEmpty from "./atoms/SkillBoxEmpty";
 import SkillsPng from "../img/profile_skills.png";
-import SectionTitle from "./atoms/SectionTitle"
+import SectionTitle from "./atoms/SectionTitle";
 export default () => {
   return (
     <div>
@@ -37,14 +37,12 @@ export default () => {
           <Col md="6">
             <BigTittle>ABOUT ME</BigTittle>
             <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              cursus nec erat vel sagittis.Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Sed cursus nec erat vel
-              sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Sed cursus nec erat vel
-              sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed cursus nec erat vel sagittis.
+              I am a new studnet, i can program a bit, and i am interested in
+              biology. I would like to participate in small project and develop
+              my skills. I have already participated in my school project eco
+              world, when we coded a simple app that help people witg
+              segregation of rubbish Any mentorgng would be great, messege me
+              for more info!
             </Description>
             <BigTittle>SKILLS</BigTittle>
 
@@ -69,11 +67,11 @@ const Box = styled.div`
 const SmallTittle = styled.h1`
   font-family: Roboto;
   font-style: normal;
-  font-weight: 100; 
+  font-weight: 100;
   font-size: 15px;
   line-height: 29px;
 
-  color: #7A7A7A;
+  color: #7a7a7a;
 `;
 
 const BigTittle = styled.h1`

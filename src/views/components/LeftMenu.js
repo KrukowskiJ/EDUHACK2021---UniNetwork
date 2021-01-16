@@ -88,7 +88,7 @@ const Search = styled.div`
   width: 100%;
 `
 const TextSearch = styled.div`
-    padding-top: 4%;
+    padding-top: 6.5%;
   float: left;
   text-align: center;
   font-family: Roboto;

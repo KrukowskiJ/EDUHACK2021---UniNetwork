@@ -39,12 +39,14 @@ border-top: none;
 height: 85%;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 40px;
+    background-color:#FAFAFA;
   
     
 `
 const Two_Cards = styled.div`
     padding: 0px;
     border: none;
+    
 `
 
 const GreenBox = styled.div`

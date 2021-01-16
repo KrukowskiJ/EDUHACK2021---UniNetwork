@@ -13,8 +13,8 @@ export default () => {
   console.log(prjData[0])
   const [BGstyles, chagneBG] = useState({
     1: { marginTop: -200, opacity: 0, zIndex: 0, left: 0 },
-    2: { marginTop: -60, opacity: 0.2, zIndex: -20, left: 0 },
-    3: { marginTop: 30, opacity: 1, zIndex: 20, left: 0 },
+    2: { marginTop: 0, opacity: 0.2, zIndex: -20, left: 0 },
+    3: { marginTop: 90, opacity: 1, zIndex: 20, left: 0 },
     4: { marginTop: 0, opacity: 0, zIndex: 20, left: -3000 },
   });
 
@@ -77,6 +77,7 @@ const Card = ({ data, LikeHandler }) => {
         <Container>
           <ProjectBox data={data}></ProjectBox>
           <Row>
+            <Col></Col>
             <Col>
               <Row>
                 <Col>
@@ -87,7 +88,6 @@ const Card = ({ data, LikeHandler }) => {
                 </Col>
               </Row>
             </Col>
-            <Col></Col>
           </Row>
         </Container>
       </CardBorder>
@@ -101,7 +101,7 @@ const Background = styled.div`
 transition: all 2s ease;
 /* transition: z-index 0s; */
 position:fixed;
-margin-left:40vw;
+margin-left:41vw;
 margin-top:${props => props.styles.marginTop}px;
 opacity:${props => props.styles.opacity};
 z-index:${props => props.styles.zIndex};
@@ -111,17 +111,19 @@ left:${props => props.styles.left}px;
 
 
 const CardBorder = styled.div`
-border:solid 5px #4C6C84;
+/* border:solid 5px #4C6C84; */
 border-top:0px;
 background-color:#fff;
-width:600px;
+/* width:40vw; */
+width:800px;
+height: 600px;
 /* margin:auto; */
 /* border-top: solid 20px #ACF2D3;  this looks wierd idk why */
 
 `
 const GreenBox = styled.div`
 background-color:#ACF2D3;
-border:solid 5px #ACF2D3;
+/* border:solid 5px #ACF2D3; */
 width:100%;
 height:30px;
 `

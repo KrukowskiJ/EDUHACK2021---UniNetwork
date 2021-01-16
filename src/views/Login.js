@@ -24,6 +24,7 @@ export default () => {
         <BACK_COLOR>
           <Logo src={logo} />
         </BACK_COLOR>
+
         <Log>
           <Col>
             <Login placeholder="Login" value="demo123" />
@@ -36,6 +37,7 @@ export default () => {
           </Col>
         </Log>
       </Header>
+
     </Body>
 
   );
@@ -46,6 +48,7 @@ height:100vh;
 width:100vw;
 padding-top:25vh;
 background-color: #F6F6F6; 
+
 `
 
 const Logo = styled.img`
@@ -68,12 +71,14 @@ const Header = styled.div`
   margin:auto;
   
   background-color: #ACF2D3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const Log = styled.div`
   height: 400px;
   width: 100%;
   background-color: #FFFFFF;
   border-radius: 0px 0px 30px 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   
 `
 
@@ -84,11 +89,12 @@ background-color: #F6F6F6;
   height: 50px;
   width: 70%;
   border: none;
-  :hover {
+:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 border-radius: 40px;  
 padding: 30px;
+font-family: Roboto;
 
 `
 
@@ -109,11 +115,12 @@ padding: 30px;
 const SignIn = styled.button`
 :hover {
   background-color: #5289b3;
-  height: 60px;
-  width: 80%; 
-  margin-left: 10%;
+  height: 50px;
+  width: 72%; 
+  margin-left: 14%;
   margin-top: 14%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 
 }
 margin-left: 15%;

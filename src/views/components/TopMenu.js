@@ -11,8 +11,13 @@ import filters from './../../img/filtres.png'
 
 const Heading = styled.div`
     width: 100vw;
+<<<<<<< HEAD
     height: 12vh;
    min-width: 100px;
+=======
+    height: 6vw; 
+    min-width: 100px;
+>>>>>>> 72b76bc54a048620de9a3df4089cdc42d9f53c2b
     color: red;
     background: #4C6C84;
     margin: 0;  
@@ -22,23 +27,26 @@ const GeneratedText = styled.img`
     width: 35%;
     float: right;
     margin-right:40px; 
-    margin-top: 1.1%;
+    margin-top: 25px;
 `
 
 const Logo = styled.img`
   height: 60px;
   float: left;
-  margin-top: 0.8%;
-  margin-bottom: 0.8%;
-  margin-left: 0.7%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
 `
 
 export default () => {
   return (
-        <Heading>
+    <Row>
+         <Heading>
             <Logo src = {logo} />
             <GeneratedText src = {generatedText} />
         </Heading>
+    </Row>
+
   );
 }
 

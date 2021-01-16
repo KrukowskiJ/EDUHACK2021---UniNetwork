@@ -24,10 +24,9 @@ export default () => {
 }
 
 const MyImg = styled.img`
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
-  height: 60px;
-  width: 60px;
-  margin-top: 8px;
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
 
 `
 
@@ -54,9 +53,15 @@ height: 74px;
 const Team_name = styled.h4`
 color: #000000;
 margin-top: 25px;
-margin-left: 5px;
 text-align: left;
 font-size: 24px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 29px;
+margin-left:10px;
+color: #6D6969;
 `
 const UniversityTitle = styled.h1`
     color: #4FB084;
@@ -107,7 +112,7 @@ const Profile_card = () => {
     <Col >
       <GreenBox>
         <Row>
-          <Col xs={8}>
+          <Col xs={9}>
             <Team_name>HEALTH POINT</Team_name>
           </Col>
           <Col>

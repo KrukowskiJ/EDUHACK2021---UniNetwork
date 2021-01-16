@@ -3,9 +3,11 @@ import styled from "styled-components"
 import logo from '../img/logo.png';
 import { Row, Col } from 'react-bootstrap';
 import App from '../App';
+import TopMenu from "./components/TopMenu";
 import {
   Redirect
 } from 'react-router-dom';
+import background from "../img/back.png"
 
 export default () => {
 
@@ -19,7 +21,9 @@ export default () => {
 
 
   return (
-    <Body>
+    <>
+    <TopMenu /> 
+    <Body style={{backgroundImage: `url(${background})`}}>
       <Header>
         <BACK_COLOR>
           <Logo src={logo} />
@@ -37,18 +41,19 @@ export default () => {
           </Col>
         </Log>
       </Header>
-
     </Body>
-
+    </>
   );
 }
+
 
 const Body = styled.div`
 height:100vh;
 width:100vw;
 padding-top:25vh;
-background-color: #F6F6F6; 
-
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 `
 
 const Logo = styled.img`
@@ -69,7 +74,6 @@ const Header = styled.div`
   height: 94px;
   width: 440px;
   margin:auto;
-  
   background-color: #ACF2D3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `

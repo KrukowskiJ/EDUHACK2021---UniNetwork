@@ -12,7 +12,7 @@ import imageSwitch from "./../../img/search.png";
 const Content = styled.div`
   background: #f6f6f6;
   margin: 0;
-  height: 87.5vh;
+  height: calc(100vh - 80px);
 `;
 const Pojemnik = styled.div`
   height: 10vh;

@@ -169,6 +169,18 @@ export default () => {
                     </Link> {" "}
                 </Search>
 
+                <Search>
+                    <Link to='addProject'>
+                        <PojemnikZdjecie>
+                            <ImageSearch src = {imageSearch}/>
+                        </PojemnikZdjecie>
+
+                        <TextSearch>Add Project</TextSearch>
+                        <div style={{clear: "both"}}></div>
+                    </Link> {" "}
+                </Search>
+
+
                     <Switch>
             <Link to='profile'>
                 <PojemnikZdjecie>

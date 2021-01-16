@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import imageMatches from './../../img/match.png'
 import imageSearch from './../../img/search.png'
 import imageArrow from './../../img/arrow.png'
-
+import imageProfile from './../../img/profile.png'
 import imageSwitch from './../../img/search.png'
 
 
@@ -184,9 +184,9 @@ export default () => {
                     <Switch>
             <Link to='profile'>
                 <PojemnikZdjecie>
-                    <ImageSwitch src = {imageSwitch}></ImageSwitch>
+                    <ImageSwitch src = {imageProfile}></ImageSwitch>
                 </PojemnikZdjecie>
-                <TextMatch> Switch </TextMatch>
+                <TextMatch> Profile </TextMatch>
             </Link> {" "}
                     </Switch>
 

@@ -139,7 +139,7 @@ export default () => {
                     <Przerwa></Przerwa>
 
                 <SwipeProject>
-                    <Link to='projects'>
+                    <Link to='swipe'>
                     <PojemnikZdjecie>
                         <ImageArrow src = {imageArrow}></ImageArrow>
                     </PojemnikZdjecie>
@@ -159,7 +159,7 @@ export default () => {
                 </Matches>
 
                 <Search>
-                    <Link to='profile'>
+                    <Link to='projects'>
                         <PojemnikZdjecie>
                             <ImageSearch src = {imageSearch}/>
                         </PojemnikZdjecie>
@@ -170,7 +170,7 @@ export default () => {
                 </Search>
 
                     <Switch>
-            <Link to='swipe'>
+            <Link to='profile'>
                 <PojemnikZdjecie>
                     <ImageSwitch src = {imageSwitch}></ImageSwitch>
                 </PojemnikZdjecie>

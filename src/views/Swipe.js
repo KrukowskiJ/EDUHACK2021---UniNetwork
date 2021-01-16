@@ -101,7 +101,7 @@ const Background = styled.div`
 transition: all 2s ease;
 /* transition: z-index 0s; */
 position:fixed;
-margin-left:41vw;
+margin-left:30vw;
 margin-top:${props => props.styles.marginTop}px;
 opacity:${props => props.styles.opacity};
 z-index:${props => props.styles.zIndex};

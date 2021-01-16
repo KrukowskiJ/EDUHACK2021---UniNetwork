@@ -32,7 +32,7 @@ function App() {
               <Route exact path="/matches" component={Matches} />
               <Route path="/profile" component={Profile} />
               <Route path="/swipe" component={Swipe} />
-              <Route path="/addProject" component={Chat} />
+              <Route path="/chat" component={Chat} />
             </div>
           </Col>
         </Row>

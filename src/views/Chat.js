@@ -30,6 +30,7 @@ const SendMessageBox=()=>{
     return(
         <>
         <Row>
+            <Col md="1" />
             <Col>
                 <MessageInput placeholder="Message" />
                 <SendIcon src={Send} />
@@ -47,7 +48,7 @@ const MessageInput=styled.input`
     background: #EBEBEB;
     border: 3px solid #ACF2D3;
     box-sizing: border-box;
-    width:70%;
+    width:80%;
     min-height:50px;
     padding:10px;
     margin-top:30px; 

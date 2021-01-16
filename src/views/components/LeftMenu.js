@@ -107,7 +107,7 @@ export default () => {
             <PojemnikZdjecie>
               <Image src={imageMatches}></Image>
             </PojemnikZdjecie>
-            <Text> Match </Text>
+            <Text> Your Matches </Text>
             <div style={{ clear: "both" }}></div>
           </StyledLink>{" "}
         </TabBox>
@@ -124,23 +124,12 @@ export default () => {
         </TabBox>
 
         <TabBox>
-          <StyledLink to="addProject">
-            <PojemnikZdjecie>
-              <Image src={imageSearch} />
-            </PojemnikZdjecie>
-
-            <Text>Add Project</Text>
-            <div style={{ clear: "both" }}></div>
-          </StyledLink>{" "}
-        </TabBox>
-
-        <TabBox>
           <StyledLink to="profile">
             <PojemnikZdjecie>
               <Image src={imageProfile} />
             </PojemnikZdjecie>
 
-            <Text>Profile</Text>
+            <Text>Your Profile</Text>
             <div style={{ clear: "both" }}></div>
           </StyledLink>{" "}
         </TabBox>

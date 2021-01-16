@@ -1,4 +1,4 @@
-import React from 'react';
+import {React} from 'react';
 import SectionTitle from "./atoms/SectionTitle";
 import styled from "styled-components"
 import { Row, Col } from 'react-bootstrap';
@@ -7,6 +7,7 @@ import SkillBox from "./atoms/SkillBox";
 import prjData from "../data/projects.json";
 import StarFull from "../img/starfull.png"
 import StarEmpty from "../img/starempty.png"
+import { Link } from 'react-router-dom'
 
 export default () => {
   return (
@@ -130,7 +131,9 @@ const Profile_card = ({ data }) => {
             <Team_name>HEALTH POINT</Team_name>
           </Col>
           <Col>
-            <MyImg src={logo} />
+            <Link to={"/chat"}>
+               <MyImg src={logo} />
+            </Link>
           </Col>
         </Row>
       </GreenBox>

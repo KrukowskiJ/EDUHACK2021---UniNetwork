@@ -10,7 +10,7 @@ export default () => {
   return (
     <>
         <SectionTitle title="CHAT WITH YOUR MATCH" />
-        <TitleDesc>NAJMAN - EKSPERT TVP INFO STOSUNKÓW MIĘDZ.</TitleDesc>
+        <TitleDesc>CYBERSECURITY SCIENCE CLUB</TitleDesc>
         <TitleLine>
                 <Title>
                     Health Point
@@ -29,14 +29,31 @@ export default () => {
 const SendMessageBox=()=>{
     return(
         <>
-        Title
-        <SendIcon src={Send} />
+        <Row>
+            <Col>
+                <MessageInput placeholder="Message" />
+                <SendIcon src={Send} />
+            </Col>
+        </Row>
         </>
     );
 }
 
 const SendIcon=styled.img`
 
+`
+
+const MessageInput=styled.input`
+    background: #EBEBEB;
+    border: 3px solid #ACF2D3;
+    box-sizing: border-box;
+    width:70%;
+    min-height:50px;
+    padding:10px;
+    margin-top:30px; 
+    margin-right:10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
 `
 
 const MessageTo = (props)=>{

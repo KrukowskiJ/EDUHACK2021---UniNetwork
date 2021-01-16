@@ -14,3 +14,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+.inactive {
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #acf2d3;
+  text-decoration: none;
+}

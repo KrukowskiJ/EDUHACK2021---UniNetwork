@@ -44,36 +44,41 @@ export default () => {
 const Body = styled.div`
 height:100vh;
 width:100vw;
-/* background-color: #F6F6F6; */
+padding-top:25vh;
+background-color: #F6F6F6; 
 `
 
 const Logo = styled.img`
- height: 100%;
- width: 100%;
+ height: 74px;
+ width: 74px;
+ margin-top: 10px;
+ margin-left: 13px;
 `
 
 const BACK_COLOR = styled.div`
-  height: 70px;
+  height: 94px;
   width: 100px;
   background-color: #4C6C84;
   margin: auto;
 `
 
 const Header = styled.div`
-  height: 70px;
+  height: 94px;
   width: 440px;
   margin:auto;
-  margin-top:20vh;
+  
   background-color: #ACF2D3;
 `
 const Log = styled.div`
-  height: 40vh;
+  height: 400px;
   width: 100%;
   background-color: #FFFFFF;
   border-radius: 0px 0px 30px 30px;
+  
 `
 
 const Login = styled.input`
+margin-left: 15%;
 margin-top: 10%;
 background-color: #F6F6F6;
   height: 50px;
@@ -81,10 +86,12 @@ background-color: #F6F6F6;
   border: none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 40px;  
+padding: 30px;
 
 `
 
 const Password = styled.input`
+margin-left: 15%;
 margin-top: 5%;
 background-color: #F6F6F6;
 height: 50px;
@@ -92,9 +99,11 @@ width: 70%;
 border: none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 40px;
+padding: 30px;
 
 `
 const SignIn = styled.button`
+margin-left: 15%;
 margin-top: 15%;
 background-color: #4C6C84;
 height: 50px;

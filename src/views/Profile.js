@@ -5,6 +5,7 @@ import SkillBox from "./atoms/SkillBox";
 import SkillBoxEmpty from "./atoms/SkillBoxEmpty";
 import SkillsPng from "../img/profile_skills.png";
 import SectionTitle from "./atoms/SectionTitle";
+import Photo from "../img/girl.png";
 export default () => {
   return (
     <div>
@@ -17,15 +18,17 @@ export default () => {
       <Box>
         <Row>
           <Col md="6">
-            <Row>
-              <Col md="3">
-                <SmallTittle>NAME</SmallTittle>
-                <NameAndSurname>JAN</NameAndSurname>
-              </Col>
-              <Col md="3">
-                <SmallTittle>SURNAME</SmallTittle>
-                <NameAndSurname>KOWALSKI</NameAndSurname>
-              </Col>
+                <Row>
+                  <Col md="6">
+                     <Avatar src={Photo} />
+                  </Col>
+                  <Col md="6">
+                    <SmallTittle>NAME</SmallTittle>
+                    <NameAndSurname>ANIA</NameAndSurname>
+
+                    <SmallTittle>SURNAME</SmallTittle>
+                <NameAndSurname>KOWALSKA</NameAndSurname>
+                  </Col>
             </Row>
             <br></br>
             <SmallTittle>UNIVERSITY</SmallTittle>
@@ -45,18 +48,23 @@ export default () => {
               for more info!
             </Description>
             <BigTittle>SKILLS</BigTittle>
-
             <Row>
               <SkillBox skill="Programming" />
               <SkillBox skill="Biology" />
               <SkillBox skill="Project Managment" />
             </Row>
+            <BigTittle>EXPIRIENCE</BigTittle>
           </Col>
         </Row>
       </Box>
     </div>
   );
 };
+
+const Avatar=styled.img`
+  height:200px;
+  width:200px;
+`
 
 const Box = styled.div`
   background: #fafafa;
@@ -65,10 +73,11 @@ const Box = styled.div`
   padding-top: 20px;
 `;
 const SmallTittle = styled.h1`
+  margin-top:20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 29px;
 
   color: #7a7a7a;

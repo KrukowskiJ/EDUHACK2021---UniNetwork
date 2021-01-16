@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Ania",
+    "surname": "Kowalska",
+    "prof": "zdjecie1.png",
+    "uni": "Warsaw University",
+    "profile": "../img/zdjecie1.png",
+    "aboutMe": "I am a new student, i can program a bit, and i am interested in biology. I would like to participate in small project and develop my skills. I have already participated in my school project eco world, when we coded a simple app that help people witg segregation of rubbish Any mentorgng would be great, messege me for more info!",
+    "skills": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "level": 2
+  },
+  {
+    "name": "Janusz",
+    "surname": "Zabrocki",
+    "prof": "zdjecie2.png",
+    "uni": "Warsaw University",
+    "aboutMe": "I am a new student, i can program a bit, and i am interested in biology. I would like to participate in small project and develop my skills. I have already participated in my school project eco world, when we coded a simple app that help people witg segregation of rubbish Any mentorgng would be great, messege me for more info!",
+    "skills": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "level": 2
+  },
+  {
+    "name": "Anastazja",
+    "surname": "Gałązka",
+    "prof": "zdjecie3.png",
+    "uni": "Warsaw University",
+    "aboutMe": "I am a new student, i can program a bit, and i am interested in biology. I would like to participate in small project and develop my skills. I have already participated in my school project eco world, when we coded a simple app that help people witg segregation of rubbish Any mentorgng would be great, messege me for more info!",
+    "skills": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "level": 2
+  }
+]

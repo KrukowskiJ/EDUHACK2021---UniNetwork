@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbe0bf44-0c66-4360-b941-1cbf54c26be2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/views/components/LeftMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/components/LeftMenu.js" afterDir="false" />
-    </list>
+    <list default="true" id="cbe0bf44-0c66-4360-b941-1cbf54c26be2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +71,7 @@
       <workItem from="1610734407788" duration="3470000" />
       <workItem from="1610737898744" duration="9000" />
       <workItem from="1610737911169" duration="15916000" />
-      <workItem from="1610755031855" duration="3606000" />
+      <workItem from="1610755031855" duration="4206000" />
     </task>
     <servers />
   </component>

@@ -39,6 +39,9 @@ const Text = styled.div`
   text-align: center;
   font-family: Roboto;
   color: black;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 29px;
 `;
 
 const Image = styled.img`

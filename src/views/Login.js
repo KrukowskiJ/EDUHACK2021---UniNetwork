@@ -84,7 +84,9 @@ background-color: #F6F6F6;
   height: 50px;
   width: 70%;
   border: none;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  :hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 border-radius: 40px;  
 padding: 30px;
 
@@ -97,19 +99,30 @@ background-color: #F6F6F6;
 height: 50px;
 width: 70%;
 border: none;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 40px;
 padding: 30px;
+:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 `
 const SignIn = styled.button`
+:hover {
+  background-color: #5289b3;
+  height: 60px;
+  width: 80%; 
+  margin-left: 10%;
+  margin-top: 14%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
 margin-left: 15%;
 margin-top: 15%;
 background-color: #4C6C84;
 height: 50px;
 width: 70%;
 border: none;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 border-radius: 40px;
 font-family: Roboto;
 font-style: normal;

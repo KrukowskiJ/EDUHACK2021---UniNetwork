@@ -13,7 +13,7 @@ import imageSwitch from './../../img/search.png'
 const Content = styled.div`
   background: #F6F6F6;
   margin: 0;
-  height: 89vh;
+  height: 87.5vh;
  
   
 `;
@@ -43,9 +43,9 @@ const SwipeProject = styled.div`
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
-const Arrow = styled.img`
+const ImageArrow = styled.img`
   height: 50%;
-   margin: 3%;
+   margin-left: 20px;
    margin-top: 15%;
   float: left;
 
@@ -63,7 +63,7 @@ const Matches = styled.div`
 `
 const ImageMatch = styled.img`
   height: 50%;
-  margin: 3%;
+  margin-left: 20px;
   margin-top: 13%;
   float: left;
 `
@@ -77,9 +77,10 @@ const TextMatch = styled.div`
 `
 
 const ImageSearch = styled.img`
-    height: 50%;
-    margin: 3%;
-    float: left;
+   height: 50%;
+  margin-left: 20px;
+  margin-top: 13%;
+  float: left;
 `
 
 const Search = styled.div`
@@ -107,9 +108,18 @@ const Switch = styled.div`
 
 const ImageSwitch = styled.img`
    height: 50%;
-  margin: 3%;
+  margin-left: 20px;
   margin-top: 13%;
   float: left;
+`
+
+const ZielonyDol = styled.div`
+  position: absolute;
+  height: 5%;
+  width: 100%;
+  bottom: 0;
+  background: #ACF2D3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 
@@ -123,7 +133,7 @@ export default () => {
                 <Container  style = {{padding: 0, height:"100%", width: "100%"}}>
                     <Zielony/>
                     <Pojemnik>
-                   
+
                     </Pojemnik>
 
                     <Przerwa></Przerwa>
@@ -131,7 +141,7 @@ export default () => {
                 <SwipeProject>
                     <Link to='projects'>
                     <PojemnikZdjecie>
-                        <Arrow src = {imageArrow}></Arrow>
+                        <ImageArrow src = {imageArrow}></ImageArrow>
                     </PojemnikZdjecie>
                         <TextMatch> Swipe Projects </TextMatch>
                         <div style={{clear: "both"}}></div>
@@ -167,6 +177,9 @@ export default () => {
                 <TextMatch> Switch </TextMatch>
             </Link> {" "}
                     </Switch>
+
+                    <ZielonyDol/>
+                    <div style={{clear: "both"}}></div>
                 </Container>
             </Content>
 

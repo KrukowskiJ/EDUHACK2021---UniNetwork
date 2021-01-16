@@ -41,39 +41,49 @@ const SendIcon=styled.img`
 
 const MessageTo = (props)=>{
     return(
-           <BoxTo>
-             <Row>
-                <UniversityLogo src={WatLogo}/>
-                <MessageBoxFrom> 
-                    <Message>
-                    {props.message}
-                    </Message>
-                </MessageBoxFrom>
-              </Row>
-            </BoxTo>
-
+        <Row>
+            <Col md="7">
+                <BoxTo>
+                    <UniversityLogo src={WatLogo}/>
+                    <MessageBoxFrom> 
+                        <Message>
+                        {props.message}
+                        </Message>
+                    </MessageBoxFrom>
+                </BoxTo>
+            </Col>
+        </Row>
     );
 }
 
 const MessageFrom = (props)=>{
     return(
-            <BoxFrom>
-              <Row>
-                <MessageBoxTo> 
-                    <Message>
-                        {props.message}
-                    </Message>
-                </MessageBoxTo>
-                <UniversityLogo src={Men}/>
-                </Row>
-            </BoxFrom>
+        <Row>
+            <Col md="5"></Col>
+            <Col>
+                <BoxFrom>
+                    <MessageBoxTo> 
+                        <Message>
+                            {props.message}
+                        </Message>
+                    </MessageBoxTo>
+                    <UniversityLogo src={Men}/>
+                </BoxFrom>
+            </Col>
+        </Row>
 
     );
 }
 
-const BoxTo=styled.div``
+const BoxTo=styled.div`
+  display: flex;
+  margin-top:5px; 
+`
 
 const BoxFrom=styled.div`
+  display: flex;
+  align-self:right;
+  margin-top:5px; 
 `
 
 const UniversityLogo = styled.img`
@@ -85,18 +95,27 @@ const MessageBoxTo=styled.div`
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
-    padding-right:10px;
+    padding-left:15px;
+    padding-right:5px;
+    padding-top:5px;
     min-width: 40%;
+    margin:auto;
+    margin-right:5px;
 `
 
 const MessageBoxFrom=styled.div`
     background: #E2F3EC;
     border: 3px solid #ACF2D3;
     box-sizing: border-box;
+    padding-left:15px;    
+    padding-right:5px;
+    padding-top:5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     padding-right:10px;
     min-width: 40%;
+    margin:auto;
+    margin-left:5px;
 `
 
 const Message=styled.h1`

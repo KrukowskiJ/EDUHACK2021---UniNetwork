@@ -78,7 +78,9 @@ const StyledLink = styled(NavLink)`
     text-decoration: underline;
   }
   :active {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); !important
     color: #acf2d3; !important
+   
   }
 `;
 

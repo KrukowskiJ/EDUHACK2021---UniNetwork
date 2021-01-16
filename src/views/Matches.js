@@ -155,7 +155,7 @@ const Profile_card = ({ data }) => {
         <Row style={{ padding: 5 }}>
           <SkillBox skill="Programming" />
           <SkillBox skill="Biology" />
-          <SkillBox skill="Physic" />
+          {/* <SkillBox skill="Physic" /> */}
           <SkillBox skill="Project Managment" />
         </Row>
 

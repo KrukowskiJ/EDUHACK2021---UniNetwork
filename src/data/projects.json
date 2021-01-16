@@ -12,31 +12,31 @@
   {
     "name": "Project 2",
     "logo": 1,
-    "uni": "Warsaw University",
-    "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.",
+    "uni": "Your University",
+    "shortDesc": "This is a short project that is an example usage of our app",
     "skills": [0, 1, 0, 1],
     "date": "01.2021 - 12.2021",
     "level": 2,
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis."
+    "desc": "This description is much longer, and can contain more information about the project. You have more details here, information about skills and other factor that are not in the other place of the card. Besides the information you can add links or other usfull stuff here!"
   },
   {
     "name": "Project 3",
     "logo": 1,
-    "uni": "WAT",
-    "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.",
+    "uni": "Your University",
+    "shortDesc": "This is a short project that is an example usage of our app",
     "skills": [0, 1, 0, 1],
     "date": "01.2021 - 12.2021",
     "level": 2,
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis."
+    "desc": "This description is much longer, and can contain more information about the project. You have more details here, information about skills and other factor that are not in the other place of the card. Besides the information you can add links or other usfull stuff here!"
   },
   {
     "name": "Project 4",
     "logo": 1,
-    "uni": "WAT",
-    "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.",
+    "uni": "Your University",
+    "shortDesc": "This is a short project that is an example usage of our app",
     "skills": [0, 1, 0, 1],
     "date": "01.2021 - 12.2021",
     "level": 2,
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus nec erat vel sagittis."
+    "desc": "This description is much longer, and can contain more information about the project. You have more details here, information about skills and other factor that are not in the other place of the card. Besides the information you can add links or other usfull stuff here!"
   }
 ]

@@ -33,7 +33,7 @@ export default ({ data }) => {
                     <Row>
                         <SkillBox skill="Programming" />
                         <SkillBox skill="Biology" />
-                        <SkillBoxEmpty skill="Physic" />
+                        {/* <SkillBoxEmpty skill="Physic" /> */}
                         <SkillBox skill="Project Managment" />
                     </Row>
 
